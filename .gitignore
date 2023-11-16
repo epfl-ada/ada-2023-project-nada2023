@@ -1,2 +1,4 @@
 MovieSummaries/
 corenlp_plot_summaries/
+*.tsv
+*.xml
