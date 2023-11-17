@@ -29,11 +29,34 @@ Putting 2 and 3 together, what is the best combination of production’s country
   - Spoken languages
     - What is the impact of speaking a language in the countries that speak those languages?
     - What is the impact of the number of spoken languages on international success?
-   
+
+## Proposed additional dataset:
+- [**Box Office Mojo**](https://www.boxofficemojo.com/?ref_=bo_nb_tt_mojologo):
+  - What?
+    The box office of movies across countries.
+  - Why?
+    In order to determine whether a movie performed well internationally we decided to use the box office in the production country vs in the other countries as a metric. Hence, it is crucial for our project to collect data on this. 
+  - How?
+  For approximately 10 000 movies of the original dataset, we were able to scrap their detailed box office across each country from the website of BoxOfficeMojo. We merged this additional dataset with the original one. 
+
+
+## Methods:
+
+The metric to measure a movie’s international success will be the percentage of its box-office that is made outside of its production’s country.
+
+### Linear Regression
+We will use linear regression (probably with OLS) to see the impact of various factors on the revenue first globally and then on the different regions and the box office. We will use R-squared to see how much impact those factors have.
+
+### Pair Matching
+We use pair matching to evaluate the difference between the different groups by matching the data using propensity scores on various attributes like genre year of release… the threshold for the propensity score will probably be around 0.95, we might lower it to have enough matching.
+
+### Network Analysis
+We will use netweok analysis to deepen our understanding and visualieze the patterns that exists between the the different regions of the world and the different languages spoken around the globe as well. We are probably going to use community analysis to find the trends betwwen and inside our groups. 
+
 ## Milestones
 ### Step 1: General Pre-Processing
 - **Gross_IMdB**
-  - We scrapped [**Box Office Mojo](https://www.boxofficemojo.com/?ref_=bo_nb_tt_mojologo). This allowed us to get gross for different movies and have information about the distribution of their box office in different countries.
+  - We scrapped [**Box Office Mojo**](https://www.boxofficemojo.com/?ref_=bo_nb_tt_mojologo). This allowed us to get gross for different movies and have information about the distribution of their box office in different countries.
   - We decided to groups countries in two different ways, first by region (Europe, Middle-East,...) and by language (English, French, Spanish,...).
 - **Movie Metadata**
   - From this file we are using the following columns: `genre`, `release_date`, `languages` & `countries`.
@@ -57,20 +80,6 @@ Then we decided to create a dataframe for each of our question which is ready to
 ### Step 7: Spoken Languages
 
 
-
-
-## Proposed additional dataset:
-BoxOfficeMojo: to get the box office in different regions of the world. This will allow us to have a better idea of how well a movie did in different regions. We did the scrapping ourselves and created a data frame for each movie that we merged in our dataframe.
-
-## Methods:
-
-The metric to measure a movie’s international success will be the percentage of its box-office that is made outside of its production’s country.
-
-### Linear Regression
-We will use linear regression (probably with OLS) to see the impact of various factors on the revenue first globally and then on the different regions and the box office. We will use R-squared to see how much impact those factors have.
-
-### Pair Matching
-We use pair matching to evaluate the difference between the different groups by matching the data using propensity scores on various attributes like genre year of release… the threshold for the propensity score will probably be around 0.95, we might lower it to have enough matching.
 
 ## Proposed timeline:
 ```
