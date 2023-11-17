@@ -3,32 +3,32 @@
 We’re exploring the international success of movies. Our goal? Discover what makes a movie successful outside of its production country given its domestic and international box-office. We’re curious about the mix of genres, available translations, production countries etc. that captivate not only their local audience but the world at large. This project aims to reveal the perfect recipe to produce films that resonate universally. In an increasingly globalized world where culture has been a major vector of this trend, we also would like to explore the evolution of the international expansion of cinema across time. Our data story is not only about numbers, it’s for everyone who wonders why some movies cross borders so easily. 
 
 ## Research Questions
-1. As an intro, how has international success of movies evolved across time?
-  a. Which decades saw significant spikes or declines in international movie success and can we relate that to historic events? (beginning of the internet or of streaming platforms for example)
-  b. Are there any noticeable trends in the genres or production countries of movies that tend to perform well internationally in different eras?
+- As an intro, how has international success of movies evolved across time?
+  - Which decades saw significant spikes or declines in international movie success and can we relate that to historic events? (beginning of the internet or of streaming platforms for example)
+  - Are there any noticeable trends in the genres or production countries of movies that tend to perform well internationally in different eras?
 
-2. What is the influence of the genre on the international success of movies?
-  a. Which genres have consistently performed well internationally?
-  b. For each regions what are the predominantly watched genres?
+- What is the influence of the genre on the international success of movies?
+  - Which genres have consistently performed well internationally?
+  - For each regions what are the predominantly watched genres?
 
-3. What is the influence of the production’s country on the international success of movies?
-  a. Do co-productions between countries increase international success?  
-  b. For each country where does it export the most?
+- What is the influence of the production’s country on the international success of movies?
+  - Do co-productions between countries increase international success?  
+  - For each country where does it export the most?
 
 Putting 2 and 3 together, what is the best combination of production’s country and genre for international success (for example American action movies, Japanese anime…).
 
-4. What is the influence of diversity (ethnicity/language//gender/) on the international success of movies?
-  a. Ethnicity
-    i.   How has ethnic diversity evolved vs movie’s international success?
-    ii.  What’s the ethnicity’s impact on a movie's international success?
-    iii. What’s the perfect ethnic diversity?
-  b. Gender
-    i.   How has gender diversity evolved vs movie’s international success?
-    ii.  What’s the gender’s impact on a movie's international success?
-    iii. What’s the perfect gender diversity?
-  c. Spoken languages
-    i.   What is the impact of speaking a language in the countries that speak those languages?
-    ii.  What is the impact of the number of spoken languages on international success?
+- What is the influence of diversity (ethnicity/language//gender/) on the international success of movies?
+  - Ethnicity
+    - How has ethnic diversity evolved vs movie’s international success?
+    - What’s the ethnicity’s impact on a movie's international success?
+    - What’s the perfect ethnic diversity?
+  - Gender
+    - How has gender diversity evolved vs movie’s international success?
+    -  What’s the gender’s impact on a movie's international success?
+    - What’s the perfect gender diversity?
+  - Spoken languages
+    - What is the impact of speaking a language in the countries that speak those languages?
+    - What is the impact of the number of spoken languages on international success?
    
 ## Milestones
 ### Step 1: General Pre-Processing
@@ -46,20 +46,13 @@ Then we decided to create a dataframe for each of our question which is ready to
 
 ### Step 2: International Success over time
 
-We performed ANOVA testing to determine if there are differences in revenue mean for the movies released in different months. We then conducted 12 t-tests, with one month as one group and the rest as the other group. We repeated this analysis for the 10 most common genres.
-
 ### Step 3: Genre
-We used $ethnicity\ score = \frac{number\ of\ ethnicities}{number\ of\ actors}$ and $female\ score = \frac{number\ of\ females}{number\ of\ actors}$ to measure the effect of diversity on revenue made. We used a threshold with $ethnicity\ score = 0.5$ and $female\ score = 0.5$ to create splits of the dataframe and then performed t-tests on the pairwise groups. For more insight we extended our analysis by a range of thresholds and calculated the confidence intervals. Additionally, we performed paired matching to control the effects of confounding variables and estimate causation effects.
 
 ### Step 4: Production Countries
-We used One-Hot Encoding of the actors by creating a dummy variable for each actor. We created a new variable for each actor, so we had to experiment with different thresholds to avoid excessively large DataFrames. The threshold corresponds to how many movies the actor has played.
-The DataFrame was then used in a linear regression model using the actors as categorical predictors. For more insights in potential patterns we used a network analysis, in which we modeled the actors as nodes and edges as indicators for movies two actors starred in together. We used the Louvain method to extract communities of actors and then analysed if movies, which have a majority of actors from one community or contain more than half of one community, have a higher revenue by using regression.
 
 ### Step 5: Ethnicity
-We used runtime and box office revenue to split the DataFrames into pairwise groups on which we performed t-tests. 
 
 ### Step 6: Gender
-We calculate the proportion of words with `positive` / `negative` / `violent` connotations out of all words in the movie summary. We used t-tests and linear regression to measure the effect of certain terms used to describe the movie.
 
 ### Step 7: Spoken Languages
 
