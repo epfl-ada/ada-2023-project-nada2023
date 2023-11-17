@@ -68,8 +68,10 @@ We will use netweok analysis to deepen our understanding and visualieze the patt
 Then we decided to create a dataframe for each of our question which is ready to be use for our analysis. 
 
 ### Step 2: International Success over time
+We will be looking at the evolution of the percentage of the box office in the home country. To answer the first part of the question we will mostly use visualization method. We will then use ANOVA to see if there's are some genre or coprodution country that outperform the other in given year. If any of those occur we will try to map them to big events that accoured in that period.
 
 ### Step 3: Genre
+Then we will use ANOVA to see difference between genre or between moview that were coproduce or made in a single country or which coprodution works best. 
 
 ### Step 4: Production Countries
 
