@@ -1,10 +1,10 @@
 # ada-2023-project-nada2023
 ## Abstract 
-We’re exploring the international success of movies. Our goal? Discover what makes a movie successful outside of its production country given its domestic and international box-office. We’re curious about the mix of genres, available translations, production countries etc. that captivate not only their local audience but the world at large. This project aims to reveal the perfect recipe to produce films that resonate universally. In an increasingly globalized world where culture has been a major vector of this trend, we also would like to explore the evolution of the international expansion of cinema across time. Our data story is not only about numbers, it’s for everyone who wonders why some movies cross borders so easily. 
+We’re exploring the international success of movies. Our goal? Discover what makes a movie successful outside of its production countries given its domestic and international box-offices. We’re curious about the mix of genres, available translations, production countries etc. that captivate not only their local audience but the world at large. This project aims to reveal the perfect recipe to produce films that resonate universally. In an increasingly globalized world where culture has been a major vector of this trend, we also would like to explore the evolution of the international expansion of cinema across time. Our data story is not only about numbers, it’s for everyone who wonders why some movies cross borders so easily. 
 
 ## Research Questions
 - As an intro, how has international success of movies evolved across time?
-  - Which decades saw significant spikes or declines in international movie success and can we relate that to historic events? (beginning of the internet or of streaming platforms for example)
+  - Which decades saw significant spikes or declines in international movie success and can we relate that to historic events? (e.g. beginning of the internet and/or streaming platforms)
   - Are there any noticeable trends in the genres or production countries of movies that tend to perform well internationally in different eras?
 
 - What is the influence of the genre on the international success of movies?
@@ -17,14 +17,14 @@ We’re exploring the international success of movies. Our goal? Discover what m
 
 Putting 2 and 3 together, what is the best combination of production’s country and genre for international success (for example American action movies, Japanese anime…).
 
-- What is the influence of diversity (ethnicity/language//gender/) on the international success of movies?
+- What is the influence of diversity (ethnicity/gender/languages) on the international success of movies?
   - Ethnicity
     - How has ethnic diversity evolved vs movie’s international success?
     - What’s the ethnicity’s impact on a movie's international success?
     - What’s the perfect ethnic diversity?
   - Gender
     - How has gender diversity evolved vs movie’s international success?
-    -  What’s the gender’s impact on a movie's international success?
+    - What’s the gender’s impact on a movie's international success?
     - What’s the perfect gender diversity?
   - Spoken languages
     - What is the impact of speaking a language in the countries that speak those languages?
@@ -51,7 +51,7 @@ We will use linear regression (probably with OLS) to see the impact of various f
 We use pair matching to evaluate the difference between the different groups by matching the data using propensity scores on various attributes like genre year of release… the threshold for the propensity score will probably be around 0.95, we might lower it to have enough matching.
 
 ### Network Analysis
-We will use netweok analysis to deepen our understanding and visualieze the patterns that exists between the the different regions of the world and the different languages spoken around the globe as well. We are probably going to use community analysis to find the trends betwwen and inside our groups. 
+We will use network analysis to deepen our understanding and visualize the patterns that exist between the different regions of the world and the different languages spoken around the globe as well. We are probably going to use community analysis to find the trends between and inside our groups. 
 
 ## Milestones
 ### Step 1: General Pre-Processing
@@ -60,28 +60,18 @@ We will use netweok analysis to deepen our understanding and visualieze the patt
   - We decided to groups countries in two different ways, first by region (Europe, Middle-East,...) and by language (English, French, Spanish,...).
 - **Movie Metadata**
   - From this file we are using the following columns: `genre`, `release_date`, `languages` & `countries`.
-  - We made sure that their weren't to many missing values for our analysis.  
+  - We made sure that there weren't too many missing values for our analysis.  
 - **Character Metadata**
-  - From this files we are using the following columns: `actor_gender` & `actor_ethnicity`
-  - For the `actor_gender` columns we used it to compute the percentage of men and woman in each movies. Same reasoning for `actor_ethnicity`
+  - From these files we are using the following columns: `actor_gender` & `actor_ethnicity`
+  - For the `actor_gender` columns we used it to compute the percentage of men and women in each movies. Same reasoning for `actor_ethnicity`
 
-Then we decided to create a dataframe for each of our question which is ready to be use for our analysis. 
+Then we decided to create a dataframe for each of our questions which are ready to be use for our analysis. 
 
-### Step 2: International Success over time
-We will be looking at the evolution of the percentage of the box office in the home country. To answer the first part of the question we will mostly use visualization method. We will then use ANOVA to see if there's are some genre or coprodution country that outperform the other in given year. If any of those occur we will try to map them to big events that accoured in that period.
+### Step 2: International Success Over Time
+We will be looking at the evolution of the percentage of the box office in the home country. To answer the first part of the question we will mostly use visualization method. We will then use ANOVA to see if there are some genres or coprodution countries that outperform the other in a given year. If any of those occur we will try to map them to big events that occured in that period.
 
-### Step 3: Genre
-Then we will use ANOVA to see difference between genre or between moview that were coproduce or made in a single country or which coprodution works best. 
-
-### Step 4: Production Countries
-
-### Step 5: Ethnicity
-
-### Step 6: Gender
-
-### Step 7: Spoken Languages
-
-
+### Step 3: Factor Analysis
+We will use ANOVA to see if in general a certain value of a factor outperforms the others (e.g. having a certain genre, or a specific production country). Are there certain values that are better perfoming in our prediefined regions/languages. We might use network analysis to see if we can create links between various values using our data, we will also check if the clusters we find are the same as in the previous point. 
 
 ## Proposed timeline:
 ```
@@ -121,15 +111,15 @@ Then we will use ANOVA to see difference between genre or between moview that we
 <tbody>
   <tr>
     <td class="tg-0lax">@BrokenSki8</td>
-    <td class="tg-0lax">Create meaningful visualizations<br><br>Continue exploring the dataset<br><br>Working on the web interface</td>
+    <td class="tg-0lax">Create meaningful visualizations<br><br>Analyze genre and coproduction<br><br>Working on the web interface</td>
   </tr>
   <tr>
     <td class="tg-0lax">@GeorgetteFR</td>
-    <td class="tg-0lax">Analyze successful movie themes<br><br>Create meaningful visualizations<br><br>Develop the web interface</td>
+    <td class="tg-0lax">Analyze ethnicity gender and spoken languages<br><br>Perform paired matching<br><br>Develop the web interface</td>
   </tr>
   <tr>
     <td class="tg-0lax">@oElliotJacquetF</td>
-    <td class="tg-0lax">Develop the web interface<br><br>Develop the final text for the data story<br><br>Perform trend analysis</td>
+    <td class="tg-0lax">Develop the web interface<br><br>Performs network analysis<br><br>Develop the final text for the data story</td>
   </tr>
   <tr>
     <td class="tg-0lax">@Gilles de Waha</td>
@@ -137,7 +127,7 @@ Then we will use ANOVA to see difference between genre or between moview that we
   </tr>
   <tr>
     <td class="tg-0lax">@AmauryGeorge</td>
-    <td class="tg-0lax">Analyze successfull actors<br><br>Develop the final text for the data story<br><br>Perform paired matching</td>
+    <td class="tg-0lax">Create meaningful visualizations<br><br>Performs network analysis<br><br>Develop the final text for the data story</td>
   </tr>
 </tbody>
 </table>
