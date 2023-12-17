@@ -42,10 +42,10 @@ In our dataset, we have access to the countries of production of the movies. We 
 As we see, as time advances, movies production companies from different countries seem to work more and more together. Now let us see the impact of co-producing on the total revenue of the movies as well as the share done outside their borders :
 
 ![revenue of coproduction as a function of time](notebook_files/notebook_83_0.png)
-<iframe src="plots/mean_revenue_coprod_genre.html" height=100% height=600px ></iframe>
+<iframe src="plots/mean_revenue_coprod_genre.html" style="width:100%; height:auto;"></iframe>
 
 ![share of coproduction as a function of time](notebook_files/notebook_86_1.png)
-<iframe src="plots/ratio_int_coprod_genre.html" height=100% height=600px></iframe>
+<iframe src="plots/ratio_int_coprod_genre.html" style="width:100%; height:auto;"></iframe>
 
 
 We can see that coproducing does not seem to greatly impact the total revenue, however it does seem to increase the share of the revenue done outside the production countries. 
