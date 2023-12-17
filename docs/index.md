@@ -23,7 +23,7 @@ Join us as we uncover the hidden narratives behind the data and reveal the evolv
 ## Evolution Across Time
 
  We observed a nuanced shift in the patterns of international success of movies over the years. By integrating box office data with release dates, we could effectively trace the trajectory of international appeal. Our analysis revealed a gradual increase in the international market share of movies, especially in the latter half of the 20th century and early 21st century. 
-![Evolution across time](notebook_files/notebook_50_0.png)
+![Evolution across time](plots/foreign_box_office_per_year.png)
 
 ## Conclusion
 Content for the conclusion..
