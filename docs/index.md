@@ -77,7 +77,7 @@ When investigating if dicersity impacted the performance in a movie, we looked a
 
 We analysed the proportion and number of both male and female actors, as well as cast sizes, and looked for links with the performance, internationally and globally:
 ![Revenue per number of actors per gender](notebook_files/notebook_54_0.png)
-![Revenue per ratio of female acotrs](notebook_files/notebook_52_1)
+![Revenue per ratio of female actors](notebook_files/notebook_52_1.png)
 ![Ratio of interational revenue per ratio of female actors]()
 
 We observe that although there is a negative correlation between the ratio of female actors to the total number of actors and the revenue, the international share of the gross does not seem significantly impacted.
