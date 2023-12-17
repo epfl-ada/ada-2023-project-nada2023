@@ -7,10 +7,13 @@
 In this ADA project, we studied which factors may influence the international success of a movie, measureed by the proportion of it's box office done outside of its production countries.
 
 PLAN: 
-1) analyse 1
-2) analyse 2
-3) analyse 3
-4) analyse 4
+1) How did international success of movies evolve across time ?
+
+2) How does the genre affect the international success ? 
+
+3) Production countries
+
+4) Diversity among the crew ?
 
 
 
