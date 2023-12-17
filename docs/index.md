@@ -5,4 +5,7 @@ This project is a comprehensive analysis of the CMU movie dataset. Below are lin
 - [Analysis Part 1](network_region.md)
 - [Analysis Part 2](notebook.md)
 
+oiqjoiqwjqijqqjqqjnnj
+
+
 Explore our findings and discover interesting trends and patterns in movie data!
