@@ -1,6 +1,5 @@
 Country_mapped,Country
 United States of America,Domestic
-Canada,Domestic
 France,France
 Spain,Spain
 Germany,Germany
@@ -40,7 +39,6 @@ South Africa,South Africa
 United Arab Emirates,United Arab Emirates
 Czech Republic,Czech Republic
 Brazil,Brazil
-Russia,Russia/CIS
 Soviet Union,Russia/CIS
 Iceland,Iceland
 Austria,Austria
@@ -74,20 +72,15 @@ Israel,Israel
 Russia,Russia
 Puerto Rico,Puerto Rico
 Vietnam,Vietnam
-Switzerland,Switzerland (German)
-Switzerland,Switzerland (French)
 Bahrain,Bahrain
 Qatar,Qatar
-Switzerland,Switzerland (Italian)
 Indonesia,Indonesia
 Jamaica,Jamaica
 Cyprus,Cyprus
-United Arab Emirates,Middle East/UAE
 Pakistan,Pakistan
 Kenya,Kenya
 Panama,Panama
 Jordan,Jordan
-Aruba,Curaçao
 Aruba,Aruba
 Sri Lanka,Sri Lanka
 Bangladesh,Bangladesh
@@ -95,17 +88,9 @@ Morocco,Morocco
 Tunisia,Tunisia
 Ethiopia,Ethiopia
 Czechoslovakia,Czech Republic/Slovakia
-Nigeria,South Africa/Nigeria
-Republic of Macedonia,North Macedonia
-Russia,Russia/CIS/Ukraine
-Ukraine,Russia/CIS/Ukraine
-Lithuania,Baltic States
-Estonia,Baltic States
-Greece,Greece and Cyprus
+Republic of Macedonia,North Macedonian
 Mandatory Palestine,Palestine
 Palestinian territories,Palestine
-Lebanon,Lebanon/United Arab Emirates
-United Arab Emirates,Lebanon/United Arab Emirates
 Costa Rica,Costa Rica
 Canada,Canada
 Yugoslavia,Yugoslavia
@@ -114,8 +99,7 @@ Federal Republic of Yugoslavia,Yugoslavia
 Ireland,Ireland
 Mongolia,Mongolia
 Cambodia,Cambodia
-Bosnia and Herzegovina,Bosnia
-Switzerland,Switzerland (French/Italian)
+Bosnia and Herzegovina,Bosnian
 Iraq,Iraq
 Malta,Malta
 Iran,Middle East
