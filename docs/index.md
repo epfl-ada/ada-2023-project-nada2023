@@ -9,11 +9,14 @@ In this ADA project, we studied which factors may influence the international su
 ## Table of Contents
 - [Introduction](#introduction)
 - [Evolution Across Time](#evolution-across-time)
+- [Influence of the genre](#influence-of-the-genre)
+
+
 - [Conclusion](#conclusion)
 
 ## Introduction
 
-Welcome to our detailed exploration of the fascinating world of movies. In this project, we dive deep into the CMU Movie Dataset, unraveling the intricate factors that contribute to the international success of films. Our journey through this dataset is not just about numbers and charts; it's a story about how movies transcend borders and cultural barriers to captivate audiences worldwide.
+Welcome to our detailed exploration of the fascinating world of movies. In this project, we dive deep into the CMU Movie Dataset, combined with IMdBs box office data ([**BoxOfficeMojo.com**](https://www.boxofficemojo.com/)) unraveling the intricate factors that contribute to the international success of films. Our journey through this dataset is not just about numbers and charts; it's a story about how movies transcend borders and cultural barriers to captivate audiences worldwide.
 
 We examine various elements such as genre preferences, box office trends, and the impact of production countries on a movie's global appeal. By combining statistical analysis with insightful visualizations, we aim to provide a comprehensive understanding of what makes a movie resonate internationally.
 
@@ -24,6 +27,13 @@ Join us as we uncover the hidden narratives behind the data and reveal the evolv
 
  We observed a nuanced shift in the patterns of international success of movies over the years. By integrating box office data with release dates, we could effectively trace the trajectory of international appeal. Our analysis revealed a gradual increase in the international market share of movies, especially in the latter half of the 20th century and early 21st century. 
 ![Evolution across time](plots/foreign_box_office_per_year.png)
+We can clearly observe a trend since the the start of the 21st century of the ratio of the box office done internationally. Multiple factors could explain this observation : 
+- Due to gloablisation, over the past few decades the investments in publicity abroad has drastically increased, and due to new technologies it is much easier to reach a wider audience
+- Thanks to internet, it is much easier to gather data on international box office now than before, so we might have more accurate distribution of the box office per country
+
+## Influence of the genre
+
+
 
 ## Conclusion
 Content for the conclusion..
