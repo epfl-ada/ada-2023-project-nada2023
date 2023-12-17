@@ -6,15 +6,35 @@
 
 In this ADA project, we studied which factors may influence the international success of a movie, measureed by the proportion of it's box office done outside of its production countries.
 
-PLAN: 
-1) How did international success of movies evolve across time ?
+## Table of Contents
+- [Introduction](#introduction)
+- [Evolution Across Time](#evolution-across-time)
+- [Conclusion](#conclusion)
 
-2) How does the genre affect the international success ? 
+## Introduction
 
-3) Production countries
+Welcome to our detailed exploration of the fascinating world of movies. In this project, we dive deep into the CMU Movie Dataset, unraveling the intricate factors that contribute to the international success of films. Our journey through this dataset is not just about numbers and charts; it's a story about how movies transcend borders and cultural barriers to captivate audiences worldwide.
 
-4) Diversity among the crew ?
+We examine various elements such as genre preferences, box office trends, and the impact of production countries on a movie's global appeal. By combining statistical analysis with insightful visualizations, we aim to provide a comprehensive understanding of what makes a movie resonate internationally.
 
+Join us as we uncover the hidden narratives behind the data and reveal the evolving landscape of the film industry in an increasingly interconnected world.
+
+
+## Evolution Across Time
+
+ We observed a nuanced shift in the patterns of international success of movies over the years. By integrating box office data with release dates, we could effectively trace the trajectory of international appeal. Our analysis revealed a gradual increase in the international market share of movies, especially in the latter half of the 20th century and early 21st century. 
+![Evolution across time](notebook_files/notebook_50_0.png)
+
+## Conclusion
+Content for the conclusion..
+
+## 1) How did international success of movies evolve across time ?
+
+In our exploration of the CMU Movie Dataset, we delved into the evolution of international success of movies across time. Our analysis utilized a comprehensive dataset encompassing box office earnings, movie genres, release dates, and production countries. Key findings include:
+
+Trend Over Time: We observed a significant evolution in the international success of movies over the years. By merging box office data with movie release years, we were able to track changes in international earnings relative to total earnings.
+
+Box Office Analysis: Our approach involved calculating the proportion of international box office earnings to the total, allowing us to gauge the level of international success. We noted a trend of increasing international appeal of movies, particularly in recent decades.
 
 
 
