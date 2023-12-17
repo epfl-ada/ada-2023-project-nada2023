@@ -1,7 +1,22 @@
 <meta http-equiv='cache-control' content='no-cache'> 
 <meta http-equiv='expires' content='0'> 
 <meta http-equiv='pragma' content='no-cache'>
-
+<style>
+.responsive-iframe {
+    position: relative;
+    overflow: hidden;
+    padding-top: 60%; /* Height is 60% of width */
+    height: 0;
+}
+.responsive-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+</style>
 # Welcome to Our Analysis of the CMU Movie Dataset
 
 In this ADA project, we studied which factors may influence the international success of a movie, measureed by the proportion of it's box office done outside of its production countries.
@@ -42,12 +57,13 @@ In our dataset, we have access to the countries of production of the movies. We 
 As we see, as time advances, movies production companies from different countries seem to work more and more together. Now let us see the impact of co-producing on the total revenue of the movies as well as the share done outside their borders :
 
 ![revenue of coproduction as a function of time](notebook_files/notebook_83_0.png)
-<iframe src="plots/mean_revenue_coprod_genre.html" style="width:100%; height:auto;"></iframe>
-
+<div class="responsive-iframe">
+    <iframe src="plots/mean_revenue_coprod_genre.html"></iframe>
+</div>
 ![share of coproduction as a function of time](notebook_files/notebook_86_1.png)
-<iframe src="plots/ratio_int_coprod_genre.html" style="width:100%; height:auto;"></iframe>
-
-
+<div class="responsive-iframe">
+    <iframe src="plots/ratio_int_coprod_genre.html"></iframe>
+</div>
 We can see that coproducing does not seem to greatly impact the total revenue, however it does seem to increase the share of the revenue done outside the production countries. 
 
 ## Influence of Diversity
