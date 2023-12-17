@@ -28,13 +28,6 @@ Join us as we uncover the hidden narratives behind the data and reveal the evolv
 ## Conclusion
 Content for the conclusion..
 
-## 1) How did international success of movies evolve across time ?
-
-In our exploration of the CMU Movie Dataset, we delved into the evolution of international success of movies across time. Our analysis utilized a comprehensive dataset encompassing box office earnings, movie genres, release dates, and production countries. Key findings include:
-
-Trend Over Time: We observed a significant evolution in the international success of movies over the years. By merging box office data with movie release years, we were able to track changes in international earnings relative to total earnings.
-
-Box Office Analysis: Our approach involved calculating the proportion of international box office earnings to the total, allowing us to gauge the level of international success. We noted a trend of increasing international appeal of movies, particularly in recent decades.
 
 
 
