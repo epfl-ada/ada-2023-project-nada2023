@@ -48,6 +48,21 @@ We can clearly observe a trend since the the start of the 21st century of the ra
 
 ## Influence of the genre
 
+ The first factor we studied was the influence of the genre on the international success of movies. We looked at the proportion of the box office done outside of the production countries, and the total box office, for each genre. We also looked at the evolution of the proportion of the box office done outside of the production countries for each genre across time.
+ 
+ First, in order to get and idea of how many genres each movie has, here is a histogram of the number of movies per number of genres :
+
+ ![number of genres](notebook_files/notebook_13_0.png)
+
+Most movies have multiple genres, e.g. Titanic (1997) has all of the following genres: Tragedy, Costume drama, Historical fiction, Action/Adventure, Period piece, Drama, Disaster, Romantic drama and Romance Film. This explain why the most represented number of genres is 5.
+
+Now let us look at which genres export the most, as well as the recent evolution of the most exported genres :
+
+![revenue per genre](plots/most_international_genres.png)
+<div class="responsive-iframe">
+    <iframe src="plots/mean_revenue_genre.html"></iframe>
+</div>
+
 ## Influence of the Production Countries
 
 In our dataset, we have access to the countries of production of the movies. We were interested in the evolution of co-productions across time, and whether co-productions betweeen countries affects its exports. Also which countries export most ?
