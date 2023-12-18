@@ -77,7 +77,7 @@ As we see, as time advances, movies production companies from different countrie
 </div>
 ![share of coproduction as a function of time](notebook_files/notebook_86_1.png)
 <div class="responsive-iframe">
-    <iframe src="plots/ratio_int_coprod_genre.html"></iframe>
+    <iframe src="plots/genre_evolution.html"></iframe>
 </div>
 We can see that coproducing does not seem to greatly impact the total revenue, however it does seem to increase the share of the revenue done outside the production countries. 
 
