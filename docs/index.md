@@ -5,14 +5,13 @@
 .responsive-iframe {
     position: relative;
     overflow: hidden;
-    padding-top: 60%; /* Height is 60% of width */
     height: 0;
 }
 .responsive-iframe iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: auto;
     height: 100%;
     border: none;
 }
