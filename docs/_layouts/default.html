@@ -1,15 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <style>
-    .page-header {
-      padding-top: 25%; /* Height is 60% of width */
-      min-height: 25vh; 
-      width: 100%;
-      height: 100%;
-    }
-  </style>
   <head>
     <meta charset="UTF-8">
+
 {% seo %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
@@ -22,7 +15,7 @@
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-    <header class="page-header" role="banner" style="background-image: url('header.png'); background-size: 100% auto; background-repeat: no-repeat; background-position: top center;;"></header>
+    <header class="page-header" role="banner" style="background-image: url('header.png'); background-size: 100% auto; background-repeat: no-repeat; background-position: top center; min-height: 25vw;">
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
