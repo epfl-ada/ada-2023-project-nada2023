@@ -60,7 +60,7 @@ Now let us look at which genres export the most, as well as the recent evolution
 
 ![revenue per genre](plots/most_international_genres.png)
 <div class="responsive-iframe">
-    <iframe src="plots/mean_revenue_genre.html"></iframe>
+    <iframe src="plots/genre_evolution.html"></iframe>
 </div>
 
 ## Influence of the Production Countries
