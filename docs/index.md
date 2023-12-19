@@ -75,13 +75,13 @@ Another factor that we thought would be important for the export of movies, is t
 </div>
 
 
-As we see, as time advances, movies production companies from different countries seem to work more and more together but the ratio of films made in coproduction barely goes up. From this graph we saw that there was a little augmentation in the ratio of movies that were made by mutlitple coutries in the last 20 years. This small augemntation leads us to think that havin a coproduction would slightly boost the revenue of a movie. The question now is how many coutries should you have to maximize your revenue? And how many coprod countries should you have if you want to maximize the ratio of the revenue made outside the productio countries?   
+As we see, as time advances, movies production companies from different countries seem to work more and more together but the ratio of films made in coproduction barely goes up. From this graph we saw that there was a little augmentation in the ratio of movies that were made by mutlitple coutries in the last 20 years. This small augmentation leads us to think that havin a coproduction would slightly boost the revenue of a movie. The question now is how many coutries should you have to maximize your revenue? And how many coprod countries should you have if you want to maximize the ratio of the revenue made outside the productio countries?   
 
 <div class="responsive-iframe">
     <iframe src="plots/mean_revenue_coprod_number.html"></iframe>
 </div>
 
-So on average movies made in two coutries are the one yielding the most revenues. The use of T-test allowed us to see that the difference in mean was statistically significant which allows us to conclude that the collaboration of two coutries should lead on average to a higher grossing film than any other number of coproduction coutries.  The section above told us that the genre of a movie has an influence so let us see if all genre perform the same.
+So on average movies made in two coutries are the one yielding the most revenues. The use of T-test allowed us to see that the difference in mean was statistically significant, which allows us to conclude that the collaboration of two coutries should lead on average to a higher grossing film than any other number of coproduction coutries. Even if the test allows us to say that the difference is statistically different the T-statistic is rather small (~2), this tells us that even if the difference exist it doesn't have a huge impact. The section above told us that the genre of a movie has an influence so let us see if all genre perform the same.
 
 <div class="responsive-iframe">
     <iframe src="plots/tot_coprod_genre.html"></iframe>
@@ -89,11 +89,26 @@ So on average movies made in two coutries are the one yielding the most revenues
 
 We can see that most genres follow the expected trend the notable exceptions or the Action/Adventure, Romance Film and Romatic comedy. They all reach their peak with three coproduction coutries. This leads to the conclusion that most genre should be made in two countries to maximise their revenue while movies from the three categories mentionned before should have 3 home countries. 
 
-## Coproduction countries vs. ratio of international revenue
+### Coproduction countries vs. ratio of international revenue
+
+We now know that the best number of countries for total gross is usually 2, is this the same if we look at the ratio of the revenue made outside of the production countries. I'll let you pause for a minute and think how you think increasing the number of coproduction countries might affect the international ratio.
+![mmmh!](plots/thinking_meme.jpg)
+
+The following graph illustrate are two representation of the same idea. The first on is a line plot of the Mean ratio of the revenue made by movies made in a given number of coutries. The second one is the same values but plotted as a box plot to give more idea about the distribution of the values. 
+
+<div class="responsive-iframe">
+    <iframe src="plots/mean_ratio_coprod.html"></iframe>
+    <iframe src="plots/ratio_int_box_coprod.html"></iframe>
+</div>
+
+Here we can see that the more coproduction countries we have the more the ratio of the revenue is made in foreign coutries, this result might be a little counter intuitive. If we had defined a _main production country_ and we would have looked at the ratio of the revenue made outside of this country it would have seemed obvious that it would be higher, because part of the revenue would have bean made in _secondary production country_. Here we look at the ratio of the box office made outside of all the production countrie and we still have a positive correlation. As before the use of T-test allows us to be sure that the difference is statistically. Moreover, this time the T-statistic is much higher (for 1 country vs. multiple T-stat ~ -13). With the same reasoning as before we can now look at different genre behave regarding the number of coprod countries. 
 
 <div class="responsive-iframe">
     <iframe src="plots/ratio_int_coprod_genre.html"></iframe>
 </div>
+
+In this case almost all genre seem to follow the expected trend with small variation. The only notable exception to the rul is the _Thriller_ genre that has a ratio of international revenue that goes down when we reach 4 coproduction countries. 
+
 We can see that coproducing does not seem to greatly impact the total revenue, however it does seem to increase the share of the revenue done outside the production countries. 
 
 ## Influence of Diversity
