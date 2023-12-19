@@ -41,7 +41,9 @@ Join us as we uncover the hidden narratives behind the data and reveal the evolv
 ## Evolution Across Time
 
  We observed a nuanced shift in the patterns of international success of movies over the years. By integrating box office data with release dates, we could effectively trace the trajectory of international appeal. Our analysis revealed a gradual increase in the international market share of movies, especially in the latter half of the 20th century and early 21st century. 
+ 
 ![Evolution across time](plots/foreign_box_office_per_year.png)
+
 We can clearly observe a trend since the the start of the 21st century of the ratio of the box office done internationally. Multiple factors could explain this observation : 
 - Due to gloablisation, over the past few decades the investments in publicity abroad has drastically increased, and due to new technologies it is much easier to reach a wider audience
 - Thanks to internet, it is much easier to gather data on international box office now than before, so we might have more accurate distribution of the box office per country
@@ -59,6 +61,7 @@ Most movies have multiple genres, e.g. Titanic (1997) has all of the following g
 Now let us look at which genres export the most, as well as the recent evolution of the most exported genres :
 
 ![revenue per genre](plots/most_international_genres.png)
+
 <div class="responsive-iframe">
     <iframe src="plots/genre_evolution.html"></iframe>
 </div>
@@ -92,6 +95,7 @@ We can see that most genres follow the expected trend the notable exceptions or 
 ### Coproduction countries vs. ratio of international revenue
 
 We now know that the best number of countries for total gross is usually 2, is this the same if we look at the ratio of the revenue made outside of the production countries. I'll let you pause for a minute and think how you think increasing the number of coproduction countries might affect the international ratio.
+
 ![mmmh!](plots/thinking_meme.jpg)
 
 The following graph illustrate are two representation of the same idea. The first on is a line plot of the Mean ratio of the revenue made by movies made in a given number of coutries. The second one is the same values but plotted as a box plot to give more idea about the distribution of the values. 
@@ -101,7 +105,7 @@ The following graph illustrate are two representation of the same idea. The firs
     <iframe src="plots/ratio_int_box_coprod.html"></iframe>
 </div>
 
-Here we can see that the more coproduction countries we have the more the ratio of the revenue is made in foreign coutries, this result might be a little counter intuitive. If we had defined a _main production country_ and we would have looked at the ratio of the revenue made outside of this country it would have seemed obvious that it would be higher, because part of the revenue would have bean made in _secondary production country_. Here we look at the ratio of the box office made outside of all the production countrie and we still have a positive correlation. As before the use of T-test allows us to be sure that the difference is statistically. Moreover, this time the T-statistic is much higher (for 1 country vs. multiple T-stat ~ -13). With the same reasoning as before we can now look at different genre behave regarding the number of coprod countries. 
+Here we can see that the more coproduction countries we have the more the ratio of the revenue is made in foreign coutries, this result might be a little counter intuitive. If we had defined a _main production country_ and we would have looked at the ratio of the revenue made outside of this country it would have seemed obvious that it would be higher, because part of the revenue would have bean made in _secondary production country_. Here we look at the ratio of the box office made outside of all the production countrie and we still have a positive correlation. As before the use of T-test allows us to be sure that the difference is statistically. Moreover, this time the T-statistic is much higher (for 1 country vs. multiple T-stat ~ -19). With the same reasoning as before we can now look at different genre behave regarding the number of coprod countries. We did various T-test to see which country augmented their export by coproducing movies. With a T-statistique of around -13 the USA is the one country from the few we analyzed that gains the most when coproducing with other countries. France and India also gain a bit but the difference is much lower both have a T-statistic of ~3. 
 
 <div class="responsive-iframe">
     <iframe src="plots/ratio_int_coprod_genre.html"></iframe>
