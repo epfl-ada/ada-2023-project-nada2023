@@ -71,14 +71,14 @@ As we see from above, the most exported genre is animation while the least (amon
 
 ## Influence of the Production Countries
 
-Another factor that we thought would be important for the export of movies, is the coutries in which the movies were shot. In this part of our analysis we will focus on the influence of coprodoctions of movies. We firstly do a brief analysis on the total gross of the movies to then fine tune it to the ratio made in foreign coutries. 
+Another factor that we thought would be important for the export of movies is the coutries in which the movies were shot. In this part of our analysis we will focus on the influence of co-prodoctions of movies. Firstly, we do a brief analysis on the total gross of the movies to then fine-tune it to the ratio made in foreign coutries. 
 
 <div class="responsive-iframe">
     <iframe src="plots/movies_coprod_ratio.html"></iframe>
 </div>
 
 
-As we see, as time advances, movies production companies from different countries seem to work more and more together but the ratio of films made in coproduction barely goes up. From this graph we saw that there was a little augmentation in the ratio of movies that were made by mutlitple coutries in the last 20 years. This small augmentation leads us to think that havin a coproduction would slightly boost the revenue of a movie. The question now is how many coutries should you have to maximize your revenue? And how many coprod countries should you have if you want to maximize the ratio of the revenue made outside the productio countries?   
+As we see, as time advances movie production companies from different countries seem to work more and more together, but the ratio of films made in co-production barely goes up. From this graph we saw that there was a little increase in the ratio of movies that were made by mutlitple countries in the last 20 years. This small increase leads us to think that having a co-production would slightly boost the revenue of a movie. The question now is how many coutries should you have to maximize your revenue? And how many co-producing countries should you have if you want to maximize the ratio of the revenue made outside the production countries?   
 
 <div class="responsive-iframe">
     <iframe src="plots/mean_revenue_coprod_number.html"></iframe>
