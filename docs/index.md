@@ -84,7 +84,7 @@ As we see, as time advances movie production companies from different countries 
     <iframe src="plots/mean_revenue_coprod_number.html"></iframe>
 </div>
 
-So on average movies made in two coutries are the one yielding the most revenues. The use of T-test allowed us to see that the difference in mean was statistically significant, which allows us to conclude that the collaboration of two coutries should lead on average to a higher grossing film than any other number of coproduction coutries. Even if the test allows us to say that the difference is statistically different the T-statistic is rather small (~2), this tells us that even if the difference exist it doesn't have a huge impact. The section above told us that the genre of a movie has an influence so let us see if all genre perform the same.
+So on average movies made in two countries are the one yielding the most revenues. The use of T-test allowed us to see that the difference in mean was statistically significant, which allows us to conclude that the collaboration of two countries should lead on average to a higher grossing film than any other number of co-production coutries. Even if the test allows us to say that the difference is statistically different the T-statistic is rather small (~2), this tells us that even if the difference exists it doesn't have a huge impact. The section above told us that the genre of a movie has an influence so let us see if all genres perform the same.
 
 <div class="responsive-iframe">
     <iframe src="plots/tot_coprod_genre.html"></iframe>
