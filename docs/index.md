@@ -68,20 +68,17 @@ As we see from above, the most exported genre is animation while the least (amon
 
 ## Influence of the Production Countries
 
-Another factor that we though would be important for the export of movies, is the coutries in which the movies were shot. In this part of our analysis we will focus on the influence of coprodoctions of movies. We firstly do a brief analysis on the total gross of the movies to then fine tune it to the ratio made in foreign coutries. 
+Another factor that we thought would be important for the export of movies, is the coutries in which the movies were shot. In this part of our analysis we will focus on the influence of coprodoctions of movies. We firstly do a brief analysis on the total gross of the movies to then fine tune it to the ratio made in foreign coutries. 
 
 <div class="responsive-iframe">
-    <iframe src="plots/movies_coprodratio.html"></iframe>
+    <iframe src="plots/movies_coprod_ratio.html"></iframe>
 </div>
-![share of coproduction as a function of time](notebook_files/notebook_86_1.png)
-<div class="responsive-iframe">
-    <iframe src="plots/ratio_int_coprod_genre.html"></iframe>
-</div>
+
 
 As we see, as time advances, movies production companies from different countries seem to work more and more together but the ratio of films made in coproduction barely goes up. From this graph we saw that there was a little augmentation in the ratio of movies that were made by mutlitple coutries in the last 20 years. This small augemntation leads us to think that havin a coproduction would slightly boost the revenue of a movie. The question now is how many coutries should you have to maximize your revenue? And how many coprod countries should you have if you want to maximize the ratio of the revenue made outside the productio countries?   
 
 <div class="responsive-iframe">
-    <iframe src="plots/mean_revenue_coprod_genre.html"></iframe>
+    <iframe src="plots/mean_revenue_coprod_number.html"></iframe>
 </div>
 
 So on average movies made in two coutries are the one yielding the most revenues. The use of T-test allowed us to see that the difference in mean was statistically significant which allows us to conclude that the collaboration of two coutries should lead on average to a higher grossing film than any other number of coproduction coutries.  The section above told us that the genre of a movie has an influence so let us see if all genre perform the same.
