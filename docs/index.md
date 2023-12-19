@@ -68,17 +68,32 @@ As we see from above, the most exported genre is animation while the least (amon
 
 ## Influence of the Production Countries
 
-In our dataset, we have access to the countries of production of the movies. We were interested in the evolution of co-productions across time, and whether co-productions betweeen countries affects its exports. Also which countries export most ?
+Another factor that we though would be important for the export of movies, is the coutries in which the movies were shot. In this part of our analysis we will focus on the influence of coprodoctions of movies. We firstly do a brief analysis on the total gross of the movies to then fine tune it to the ratio made in foreign coutries. 
 
-![number of coproduction as a function of time](notebook_files/notebook_76_0.png)
+<div class="responsive-iframe">
+    <iframe src="plots/movies_coprodratio.html"></iframe>
+</div>
+![share of coproduction as a function of time](notebook_files/notebook_86_1.png)
+<div class="responsive-iframe">
+    <iframe src="plots/ratio_int_coprod_genre.html"></iframe>
+</div>
 
-As we see, as time advances, movies production companies from different countries seem to work more and more together. Now let us see the impact of co-producing on the total revenue of the movies as well as the share done outside their borders :
+As we see, as time advances, movies production companies from different countries seem to work more and more together but the ratio of films made in coproduction barely goes up. From this graph we saw that there was a little augmentation in the ratio of movies that were made by mutlitple coutries in the last 20 years. This small augemntation leads us to think that havin a coproduction would slightly boost the revenue of a movie. The question now is how many coutries should you have to maximize your revenue? And how many coprod countries should you have if you want to maximize the ratio of the revenue made outside the productio countries?   
 
-![revenue of coproduction as a function of time](notebook_files/notebook_83_0.png)
 <div class="responsive-iframe">
     <iframe src="plots/mean_revenue_coprod_genre.html"></iframe>
 </div>
-![share of coproduction as a function of time](notebook_files/notebook_86_1.png)
+
+So on average movies made in two coutries are the one yielding the most revenues. The use of T-test allowed us to see that the difference in mean was statistically significant which allows us to conclude that the collaboration of two coutries should lead on average to a higher grossing film than any other number of coproduction coutries.  The section above told us that the genre of a movie has an influence so let us see if all genre perform the same.
+
+<div class="responsive-iframe">
+    <iframe src="plots/tot_coprod_genre.html"></iframe>
+</div>
+
+We can see that most genres follow the expected trend the notable exceptions or the Action/Adventure, Romance Film and Romatic comedy. They all reach their peak with three coproduction coutries. This leads to the conclusion that most genre should be made in two countries to maximise their revenue while movies from the three categories mentionned before should have 3 home countries. 
+
+## Coproduction countries vs. ratio of international revenue
+
 <div class="responsive-iframe">
     <iframe src="plots/ratio_int_coprod_genre.html"></iframe>
 </div>
