@@ -71,20 +71,20 @@ As we see from above, the most exported genre is animation while the least (amon
 
 ## Influence of the Production Countries
 
-Another factor that we thought would be important for the export of movies, is the coutries in which the movies were shot. In this part of our analysis we will focus on the influence of coprodoctions of movies. We firstly do a brief analysis on the total gross of the movies to then fine tune it to the ratio made in foreign coutries. 
+Another factor that we thought would be important for the export of movies is the coutries in which the movies were shot. In this part of our analysis we will focus on the influence of co-prodoctions of movies. Firstly, we do a brief analysis on the total gross of the movies to then fine-tune it to the ratio made in foreign coutries. 
 
 <div class="responsive-iframe">
     <iframe src="plots/movies_coprod_ratio.html"></iframe>
 </div>
 
 
-As we see, as time advances, movies production companies from different countries seem to work more and more together but the ratio of films made in coproduction barely goes up. From this graph we saw that there was a little augmentation in the ratio of movies that were made by mutlitple coutries in the last 20 years. This small augmentation leads us to think that havin a coproduction would slightly boost the revenue of a movie. The question now is how many coutries should you have to maximize your revenue? And how many coprod countries should you have if you want to maximize the ratio of the revenue made outside the productio countries?   
+As we see, as time advances movie production companies from different countries seem to work more and more together, but the ratio of films made in co-production barely goes up. From this graph we saw that there was a little increase in the ratio of movies that were made by mutlitple countries in the last 20 years. This small increase leads us to think that having a co-production would slightly boost the revenue of a movie. The question now is how many coutries should you have to maximize your revenue? And how many co-producing countries should you have if you want to maximize the ratio of the revenue made outside the production countries?   
 
 <div class="responsive-iframe">
     <iframe src="plots/mean_revenue_coprod_number.html"></iframe>
 </div>
 
-So on average movies made in two coutries are the one yielding the most revenues. The use of T-test allowed us to see that the difference in mean was statistically significant, which allows us to conclude that the collaboration of two coutries should lead on average to a higher grossing film than any other number of coproduction coutries. Even if the test allows us to say that the difference is statistically different the T-statistic is rather small (~2), this tells us that even if the difference exist it doesn't have a huge impact. The section above told us that the genre of a movie has an influence so let us see if all genre perform the same.
+So on average movies made in two countries are the one yielding the most revenues. The use of T-test allowed us to see that the difference in mean was statistically significant, which allows us to conclude that the collaboration of two countries should lead on average to a higher grossing film than any other number of co-production coutries. Even if the test allows us to say that the difference is statistically different the T-statistic is rather small (~2), this tells us that even if the difference exists it doesn't have a huge impact. The section above told us that the genre of a movie has an influence so let us see if all genres perform the same.
 
 <div class="responsive-iframe">
     <iframe src="plots/tot_coprod_genre.html"></iframe>
@@ -113,7 +113,16 @@ Here we can see that the more coproduction countries we have the more the ratio 
 
 In this case almost all genre seem to follow the expected trend with small variation. The only notable exception to the rul is the _Thriller_ genre that has a ratio of international revenue that goes down when we reach 4 coproduction countries. 
 
-We can see that coproducing does not seem to greatly impact the total revenue, however it does seem to increase the share of the revenue done outside the production countries. 
+## Influence of the number of languages
+
+Since we analysed the influence of the number of co-production countries had in the revenue and the export of the movies. We wandered if having multiple languages could also help export movies. Since the two ideas are pretty simlar, we will follow the same template as for the number of coproduction countries. 
+
+<div class="responsive-iframe">
+    <iframe src="plots/movies_lang_ratio.html"></iframe>
+</div>
+
+This graph is really similar to the one about the ratio of movies made by more than one country. Our anaylsis stays the same if we see an augmentation it is probably due to multiple factors one of them being that it should help boost the revenue of the movies. As before we ask ourself how many language should a movie have to have the best expected revenue? And is this the same number if we want our movie to export as much as possible?
+ 
 
 ## Influence of Diversity
 
