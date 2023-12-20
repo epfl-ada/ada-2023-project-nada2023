@@ -113,7 +113,16 @@ Here we can see that the more coproduction countries we have the more the ratio 
 
 In this case almost all genre seem to follow the expected trend with small variation. The only notable exception to the rul is the _Thriller_ genre that has a ratio of international revenue that goes down when we reach 4 coproduction countries. 
 
-We can see that coproducing does not seem to greatly impact the total revenue, however it does seem to increase the share of the revenue done outside the production countries. 
+## Influence of the number of languages
+
+Since we analysed the influence of the number of co-production countries had in the revenue and the export of the movies. We wandered if having multiple languages could also help export movies. Since the two ideas are pretty simlar, we will follow the same template as for the number of coproduction countries. 
+
+<div class="responsive-iframe">
+    <iframe src="plots/movies_lang_ratio.html"></iframe>
+</div>
+
+This graph is really similar to the one about the ratio of movies made by more than one country. Our anaylsis stays the same if we see an augmentation it is probably due to multiple factors one of them being that it should help boost the revenue of the movies. As before we ask ourself how many language should a movie have to have the best expected revenue? And is this the same number if we want our movie to export as much as possible?
+ 
 
 ## Influence of Diversity
 
