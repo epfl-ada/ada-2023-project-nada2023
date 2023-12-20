@@ -90,7 +90,7 @@ So on average movies made in two countries are the one yielding the most revenue
     <iframe src="plots/tot_coprod_genre.html"></iframe>
 </div>
 
-We can see that most genres follow the expected trend the notable exceptions or the Action/Adventure, Romance Film and Romatic comedy. They all reach their peak with three coproduction coutries. This leads to the conclusion that most genre should be made in two countries to maximise their revenue while movies from the three categories mentionned before should have 3 home countries. 
+We can see that most genres follow the expected trend with the notable exceptions being Action/Adventure, Romance Film and Romatic Comedy. They all reach their peak with three co-production coutries. This leads to the conclusion that most genre should be made in two countries to maximise their share of revenue abroad while movies from the three aforementionned genres should have 3 home countries. 
 
 ### Coproduction countries vs. ratio of international revenue
 
@@ -136,9 +136,20 @@ When investigating if dicersity impacted the performance in a movie, we looked a
 We analysed the proportion and number of both male and female actors, as well as cast sizes, and looked for links with the performance, internationally and globally:
 ![Revenue per number of actors per gender](notebook_files/notebook_54_0.png)
 ![Revenue per ratio of female actors](notebook_files/notebook_52_1.png)
-![Ratio of interational revenue per ratio of female actors]()
+![Ratio of interational revenue per ratio of female actors](plots/ratio_export_per_female.png)
 
 We observe that although there is a negative correlation between the ratio of female actors to the total number of actors and the revenue, the international share of the gross does not seem significantly impacted.
+
+### Ethnic Diversity
+
+Another factor taken into account is whether the number of represented ethnicities in a movie would have an impact. After retrieving the ethnicities of the actors we had access to in the CMU Dataset, we created an "ethnicity ratio" defined as $EthnicRatio = \frac{number\ of\ ethnicities}{number\ of\ actors}$
+
+![Ratio of interational revenue per Ethnicity ratio](plots/ratio_of_export_per_ethnicity_ratio.png)
+![Ratio of interational revenue per number of ethnicities](plots/ratio_of_export_per_nethnicities.png)
+
+As we can see the ethnicity score does not seem to have an impact whereas the number of ethnicities seems correlated with the export ratio. However, this might be due to its correlation with the number of actors.
+
+As we can see,
 
 ## Conclusion
 Content for the conclusion..
