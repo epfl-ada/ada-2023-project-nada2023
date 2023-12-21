@@ -189,7 +189,7 @@ We analysed the proportion and number of both male and female actors, as well as
     <iframe src="plots/ratio_export_per_female.html"></iframe>
 </div>
 
-We observe that although there is a negative correlation between the ratio of female actors to the total number of actors and the revenue, the international share of the gross does not seem significantly impacted.
+We observe that although there is a negative correlation between the ratio of female actors to the total number of actors and the revenue (spearman correlation of -0.14, P Value extremely close to 0), the international share of the gross does not seem significantly impacted (spearman correlation of -0.04, P Value extremely close to 0 once again). 
 
 ### Ethnic Diversity
 
