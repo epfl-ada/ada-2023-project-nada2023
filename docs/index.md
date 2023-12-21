@@ -94,6 +94,11 @@ So on average movies made in two countries are the one yielding the most revenue
 
 We can see that most genres follow the expected trend with the notable exceptions being Action/Adventure, Romance Film and Romatic Comedy. They all reach their peak with three co-production coutries. This leads to the conclusion that most genre should be made in two countries to maximise their share of revenue abroad while movies from the three aforementionned genres should have 3 home countries. 
 
+<div class="responsive-iframe">
+    <iframe src="plots/country_co-productions.html"></iframe>
+</div>
+
+
 ### Coproduction countries vs. ratio of international revenue
 
 We now know that the best number of countries for total gross is usually 2, is this the same if we look at the ratio of the revenue made outside of the production countries. I'll let you pause for a minute and think how you think increasing the number of coproduction countries might affect the international ratio.
