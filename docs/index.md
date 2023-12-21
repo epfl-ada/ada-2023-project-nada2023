@@ -133,6 +133,42 @@ Since we analysed the influence of the number of co-production countries had in 
 </div>
 
 This graph is really similar to the one about the ratio of movies made by more than one country. Our anaylsis stays the same if we see an augmentation it is probably due to multiple factors one of them being that it should help boost the revenue of the movies. As before we ask ourself how many language should a movie have to have the best expected revenue? And is this the same number if we want our movie to export as much as possible?
+
+<div class="responsive-iframe">
+    <iframe src="plots/gross_languages.html"></iframe>
+</div>
+
+In the graph above we only kept movies that have up to five languages because our dataset doesn't contain enough movies with more infomation to be relevant in our study. This visualisation shows us that the more languages, or at least up to five languages, you have the more, on average, your movie is suppose to make. Since we don't have enough information about movies with more languages we cannot say the perfect number of languages would be but we can say that the more the better but you probably don't want to over do it. The T-test here is much more clear with a T-statistic of ~ -8, as usual the p/value is reallz small and allows us to say that the difference is statistically relevent. As for the co-production countries let us do the same analysis but seperate the result per genre. 
+
+<div class="responsive-iframe">
+    <iframe src="plots/mean_rev_lang_genre.html"></iframe>
+</div>
+
+We can see that most genres follow the expected trend with the notable exceptions being Adventure, Thriller and Crime Fiction. The Adventure movies mysteriously don't perform as well when they have 3 and five languages but other follow the expected trend. Thriller and Crime Fiction take a hit at 4 laguages then are going back up at five. For all three of these anomalies we weren't able to give an explanation. But even with this particularities we would still advice a movie do have a many languages as possible (or at least up to five).
+
+### Number of languages vs. ratio of international revenue
+
+We now know that the higher the number of languages the higher the total gross is, can we say the same if we look at the ratio of the revenue made outside of the production countries. Just as before we'll let you pause and try to predict how the following graph might look like.
+
+![mmmmh!](plots/Drake_meme.png)
+
+We used the same representation as before. Two graphes showing the average export ratio of the movies one as a line plot one as a box plot. 
+
+<div class="responsive-iframe">
+    <iframe src="plots/mean_ratio_lang.html"></iframe>
+</div>
+
+<div class="responsive-iframe">
+    <iframe src="plots/ratio_int_box_lang.html"></iframe>
+</div>
+
+This time the ratio of international revenue is behaves the same as the total revenue, i.e. the more languages you have the more you can expect your movie to export. As before the use of T-test allows us to be sure that the difference is statistically. Moreover, this time the T-statistic is much higher (for 1 language vs. multiple T-stat ~ -14). With the same reasoning as before we can now look at different genre behave regarding the number of langugags. We did various T-test to see which language benifited in their export by mixing them with others movies. With a T-statistique of around -13 English is the one language from the few we analyzed that gains the most when mixing with others. French and Japanes also gain a bit but the difference is much lower both have a T-statistic of ~ -3. For Spanish and Hindi, which complete the top 5 of most common languages in our dataset, the difference is not statistically significant
+
+<div class="responsive-iframe">
+    <iframe src="plots/mean_rev_lang_genre.html"></iframe>
+</div>
+
+Expect for minor exception the genre behave as we would except them to. Meaning that, at least up to 5 languages, The more languages the better. The excpetion are here so minor that I dont think it's relevant to explain them. 
  
 
 ## Influence of Diversity
@@ -147,7 +183,10 @@ When investigating if dicersity impacted the performance in a movie, we looked a
 We analysed the proportion and number of both male and female actors, as well as cast sizes, and looked for links with the performance, internationally and globally:
 ![Revenue per number of actors per gender](notebook_files/notebook_54_0.png)
 <div class="responsive-iframe">
-    <iframe src="plots/ratio_int_coprod_genre.html"></iframe>
+    <iframe src="plots/gross_per_female_ratio.html"></iframe>
+</div>
+<div class="responsive-iframe">
+    <iframe src="plots/ratio_export_per_female.html"></iframe>
 </div>
 
 We observe that although there is a negative correlation between the ratio of female actors to the total number of actors and the revenue, the international share of the gross does not seem significantly impacted.
