@@ -152,7 +152,7 @@ We observe that although there is a negative correlation between the ratio of fe
 
 ### Ethnic Diversity
 
-Another factor taken into account is whether the number of represented ethnicities in a movie would have an impact. After retrieving the ethnicities of the actors we had access to in the CMU Dataset, we created an "ethnicity ratio" defined as $EthnicRatio = \frac{number\ of\ ethnicities}{number\ of\ actors}$
+Another factor taken into account is whether the number of represented ethnicities in a movie would have an impact. After retrieving the ethnicities of the actors we had access to in the CMU Dataset, we created an "ethnicity ratio" defined as the ratio between the number of ethnicities in the movie to the number of actors.
 
 ![Ratio of interational revenue per Ethnicity ratio](plots/ratio_of_export_per_ethnicity_ratio.html)
 ![Ratio of interational revenue per number of ethnicities](plots/ratio_of_export_per_nethnicities.html)
