@@ -50,7 +50,7 @@ We can clearly observe a trend since the the start of the 21st century of the ra
 - Due to gloablisation, over the past few decades the investments in publicity abroad has drastically increased, and due to new technologies it is much easier to reach a wider audience
 - Thanks to internet, it is much easier to gather data on international box office now than before, so we might have more accurate distribution of the box office per country
 
-![region_to_region](network_region_files/notebook_62_0.png)
+![region_to_region](network_region_files/network_region_62_0.png)
 
 ## Influence of the genre
 
