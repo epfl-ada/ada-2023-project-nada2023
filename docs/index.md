@@ -111,6 +111,8 @@ The following graph illustrate are two representation of the same idea. The firs
 
 <div class="responsive-iframe">
     <iframe src="plots/mean_ratio_coprod.html"></iframe>
+</div>
+<div class="responsive-iframe">
     <iframe src="plots/ratio_int_box_coprod.html"></iframe>
 </div>
 
@@ -157,6 +159,9 @@ Another factor taken into account is whether the number of represented ethniciti
 
 <div class="responsive-iframe">
     <iframe src="plots/ratio_of_export_per_ethnicity_ratio.html"><iframe>
+</div>
+
+<div class="responsive-iframe">
     <iframe src="plots/ratio_of_export_per_nethnicities.html"></iframe>
 </div>
 
