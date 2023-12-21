@@ -50,6 +50,8 @@ We can clearly observe a trend since the the start of the 21st century of the ra
 - Due to gloablisation, over the past few decades the investments in publicity abroad has drastically increased, and due to new technologies it is much easier to reach a wider audience
 - Thanks to internet, it is much easier to gather data on international box office now than before, so we might have more accurate distribution of the box office per country
 
+![region_to_region](network_region_files/notebook_62_0.png)
+
 ## Influence of the genre
 
  The first factor we studied was the influence of the genre on the international success of movies. We looked at the proportion of the box office done outside of the production countries, and the total box office, for each genre. We also looked at the evolution of the proportion of the box office done outside of the production countries for each genre across time.
