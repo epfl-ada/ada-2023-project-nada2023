@@ -42,7 +42,9 @@ Join us as we uncover the hidden narratives behind the data and reveal the evolv
 
  We observed a nuanced shift in the patterns of international success of movies over the years. By integrating box office data with release dates, we could effectively trace the trajectory of international appeal. Our analysis revealed a gradual increase in the international market share of movies, especially in the latter half of the 20th century and early 21st century. 
  
-![Evolution across time](plots/foreign_box_office_per_year.png)
+<div class="responsive-iframe">
+    <iframe src="plots/foreign_evolution.html"></iframe>
+</div>
 
 We can clearly observe a trend since the the start of the 21st century of the ratio of the box office done internationally. Multiple factors could explain this observation : 
 - Due to gloablisation, over the past few decades the investments in publicity abroad has drastically increased, and due to new technologies it is much easier to reach a wider audience
@@ -135,8 +137,9 @@ When investigating if dicersity impacted the performance in a movie, we looked a
 
 We analysed the proportion and number of both male and female actors, as well as cast sizes, and looked for links with the performance, internationally and globally:
 ![Revenue per number of actors per gender](notebook_files/notebook_54_0.png)
-![Revenue per ratio of female actors](notebook_files/notebook_52_1.png)
-![Ratio of interational revenue per ratio of female actors](plots/ratio_export_per_female.png)
+<div class="responsive-iframe">
+    <iframe src="plots/gross_female.html"></iframe>
+</div>
 
 We observe that although there is a negative correlation between the ratio of female actors to the total number of actors and the revenue, the international share of the gross does not seem significantly impacted.
 
