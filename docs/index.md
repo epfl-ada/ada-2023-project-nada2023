@@ -161,7 +161,7 @@ Another factor taken into account is whether the number of represented ethniciti
     <iframe src="plots/ratio_of_export_per_ethnicity_ratio.html"></iframe>
 </div>
 <div class="responsive-iframe">
-    <iframe src="plots/ratio_of_export_per_nethnicities.html"></iframe>
+    <iframe src="plots/ratio_of_export_per_nethnicity.html"></iframe>
 </div>
 
 As we can see the ethnicity score does not seem to have an impact whereas the number of ethnicities seems correlated with the export ratio. However, this might be due to its correlation with the number of actors.
