@@ -16,6 +16,12 @@
     height: 100%;
     border: none;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 </style>
 # Welcome to Our Analysis of the CMU Movie Dataset
 
@@ -150,7 +156,8 @@ We can see that most genres follow the expected trend with the notable exception
 
 We now know that the higher the number of languages the higher the total gross is, can we say the same if we look at the ratio of the revenue made outside of the production countries. Just as before we'll let you pause and try to predict how the following graph might look like.
 
-![mmmmh!](plots/Drake_meme.png)
+<img src = "plots/Drake_meme.png" width = 50% class="center">
+
 
 We used the same representation as before. Two graphes showing the average export ratio of the movies one as a line plot one as a box plot. 
 
