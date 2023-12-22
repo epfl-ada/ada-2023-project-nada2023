@@ -76,7 +76,11 @@ We can clearly observe a trend since the the start of the 21st century of the ra
  
  First, in order to get and idea of how many genres each movie has, here is a histogram of the number of movies per number of genres :
 
- ![number of genres](notebook_files/notebook_13_0.png)
+ 
+
+ <div class="responsive-iframe">
+    <iframe src="plots/nb_genres.html"></iframe>
+</div>
 
 Most movies have multiple genres, e.g. Titanic (1997) has all of the following genres: Tragedy, Costume drama, Historical fiction, Action/Adventure, Period piece, Drama, Disaster, Romantic drama and Romance Film. This explain why the most represented number of genres is 5.
 
