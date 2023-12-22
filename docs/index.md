@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Movie exportation success
-subtitle: Let's see the factors
 cover-img: ban_gpt.png
 thumbnail-img: ban_gpt.png
 share-img: ban_gpt.png
