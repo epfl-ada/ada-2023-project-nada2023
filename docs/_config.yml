@@ -2,7 +2,6 @@ remote_theme: daattali/beautiful-jekyll
 title: International success of movies
 
 navbar-links:
-  Home: ""
   About Us: "aboutus"
   Sources: "sources"
 
