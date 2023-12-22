@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Movie exportation success
+title: Movie Exportation Success
 cover-img: ban_gpt.png
 thumbnail-img: ban_gpt.png
 share-img: ban_gpt.png
