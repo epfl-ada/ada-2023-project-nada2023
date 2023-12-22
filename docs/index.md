@@ -202,6 +202,15 @@ We used the same representation as before. Two graphes showing the average expor
 
 Films with multiple languages show a higher ratio of international revenue. T-tests confirm this is statistically significant (T-stat ~ -14 for films with one vs. multiple languages). Among languages analyzed, English benefits most from mixing with others (T-stat ~ -13). French and Japanese also show gains, albeit smaller (T-stat ~ -3 each). For Spanish and Hindi, however, the difference isn't statistically significant.
 
+We will now be looking at the impact of the languages in the countries speaking the languages. For instance if an american movie has some chinese spoken in it, will there be more exportation towards china than usual. To do that we will look at the distribution of the exports in all countries compared to in the countries were a language is spoken.
+
+<div class="responsive-iframe">
+    <iframe src="plots/language_impact.html"></iframe>
+</div>
+
+This is a log scale, but we clearly see that films work better in countries whose language is spoken in the film 
+
+
 ## Influence of Diversity
 
 When investigating if diversity impacted the performance in a movie, we looked at 3 different factors : 
