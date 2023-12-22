@@ -165,7 +165,7 @@ Further T-test analyses on different countries indicate that the USA benefits mo
 
 We made a small analysis about the number of region that produced a movie and its relation to the ratio of international revenue. We found very similar results as for the number of co-production countries. We can explain that by the fact that 75% of the co-produced movies have countries from multiple regions. We can make the simplified hypothesis that adding a country is like adding a region so we won't repeat ourselves.    
 
-## Influence of the number of languages
+## Influence of the Number of Languages
 
 
 We will now analyse how the number of languages in a movie influence it's performance internationally. Let's start by looking at the proportion of films with more than one language across time.
