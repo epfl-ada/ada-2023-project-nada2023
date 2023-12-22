@@ -149,7 +149,7 @@ Here we can see that the more coproduction countries we have the more the ratio 
     <iframe src="plots/ratio_int_coprod_genre.html"></iframe>
 </div>
 
-In this case almost all genre seem to follow the expected trend with small variation. The only notable exception to the rul is the _Thriller_ genre that has a ratio of international revenue that goes down when we reach 4 coproduction countries. 
+In this case almost all genre seem to follow the expected trend with small variation. The only notable exception to the rule is the _Thriller_ genre that has a ratio of international revenue that goes down when we reach 4 coproduction countries. 
 
 ## Influence of the number of languages
 
