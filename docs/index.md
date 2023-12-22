@@ -43,7 +43,7 @@ Over half of the global film revenues are realized internationally, beyond the c
 - [Introduction](#introduction)
 - [Evolution Across Time](#evolution-across-time)
 - [Influence of the genre](#influence-of-the-genre)
-- [Influence of the production countries](#influence-of-the-production-countries)
+- [Influence of Co-Productions](#influence-of-the-production-countries)
 - [Influence of diversity](#influence-of-diversity)
 - [Conclusion](#conclusion)
 
@@ -139,26 +139,27 @@ So on average movies made in two countries are the ones yielding the most revenu
 
 ### Coproduction countries vs. ratio of international revenue
 
-We now know that the best number of countries for total gross is usually 2, is this the same if we look at the ratio of the revenue made outside of the production countries? I'll let you pause for a minute and think about how increasing the number of co-production countries might affect the international ratio.
+We now know that the best number of countries for total gross is usually 2, 
+
+is this the same if we look at the ratio of the revenue made outside of the production countries? I'll let you pause for a minute and think about how increasing the number of co-production countries might affect the international ratio.
 
 ![mmmh!](plots/thinking_meme.jpg)
 
-The following graphs are two representation of the same idea. The first on is a line plot of the Mean ratio of the revenue made by movies made in a given number of coutries. The second one is the same values but plotted as a box plot to give a more accurate idea about the distribution of the values. 
+The following graphs are two representation of the same idea. The first one represents the proportion of revenue that was made internationally as a function of the number of production countries. The second one gives us a more accurate idea about the distribution of the values. 
 
 <div class="responsive-iframe">
     <iframe src="plots/mean_ratio_coprod.html"></iframe>
 </div>
+
 <div class="responsive-iframe">
     <iframe src="plots/ratio_int_box_coprod.html"></iframe>
 </div>
 
-Here we can see that the more co-production countries we have, the more the ratio of the revenue is made in foreign coutries. This result might be a little counter-intuitive. If we had defined a _main production country_ and we had looked at the ratio of the revenue made outside of this country it would have seemed obvious that it would be higher, because part of the revenue would have bean made in  the _secondary production country_. Here we look at the ratio of the box office made outside of all the production countries and we still have a positive correlation. As before the use of T-test allows us to be sure that the difference is statistically. Moreover, this time the T-statistic is much higher (for 1 country vs. multiple T-stat ~ -19). With the same reasoning as before we can now look at how different genres behave regarding the number of co-producing countries. We did various T-test to see which countries augmented their export by co-producing movies. With a T-statistique of around -13 the USA is the one country from the few we analyzed that gains the most when co-producing with other countries. France and India also gain a bit but the difference is much lower both have a T-statistic of ~3. 
+The data reveals that films with more co-production countries tend to earn a higher ratio of their revenue in foreign markets. This trend is counterintuitive, as one would expect fewer foreign countries to target for revenue as the number of production countries increases. Yet, surprisingly, our analysis shows a positive correlation between more co-producing countries and higherf foreign market revenue.
 
-<div class="responsive-iframe">
-    <iframe src="plots/ratio_int_coprod_genre.html"></iframe>
-</div>
+Statistical validation through T-tests confirms this relationship, with a notable T-statistic of -19 for films with one vs. multiple production countries. 
 
-In this case almost all genre seem to follow the expected trend with small variations. The only notable exception to the rule is the _Thriller_ genre that has a ratio of international revenue that goes down when we reach 4 co-production countries. 
+Further T-test analyses on different countries indicate that the USA benefits most from co-productions, showing a significant T-statistic of -13. France and India also see benefits, albeit to a lesser extent, with T-statistics around -3.
 
 ### Influence of the number of regions 
 
@@ -166,7 +167,8 @@ We made a small analysis about the number of region that produced a movie and it
 
 ## Influence of the number of languages
 
-Since we analysed the influence of the number of co-production countries had in the revenue and the export of the movies. We wondered if having multiple languages could also help export movies. Since the two ideas are pretty simlar, we will follow the same template as for the number of coproduction countries. 
+
+We will now analyse how the number of languages in a movie influence it's performance internationally. Let's start by looking at the proportion of films with more than one language across time.
 
 <div class="responsive-iframe">
     <iframe src="plots/movies_lang_ratio.html"></iframe>
@@ -178,22 +180,17 @@ This graph is really similar to the one about the ratio of movies made by more t
     <iframe src="plots/gross_languages.html"></iframe>
 </div>
 
-In the graph above we only kept movies that have up to five languages because our dataset doesn't contain enough movies with more infomation to be relevant in our study. This visualisation shows us that the more languages, or at least up to five languages, you have, the more on average your movie is suppose to make. Since we don't have enough information about movies with more languages we cannot say what the perfect number of languages would be, but we can say that the more the better although you probably don't want to overdo it. The T-test here is much clearer with a T-statistic of ~ -8, as usual the p/value is reallz small and allows us to say that the difference is statistically relevent. As for the co-production countries let us do the same analysis but seperate the result per genre. 
-
-<div class="responsive-iframe">
-    <iframe src="plots/mean_rev_lang_genre.html"></iframe>
-</div>
-
-We can see that most genres follow the expected trend with the notable exceptions being Adventure, Thriller and Crime Fiction. The Adventure movies mysteriously don't perform as well when they have 3 and five languages but others follow the expected trend. Thriller and Crime Fiction take a hit at 4 languages and then go back up at five. For all three of these anomalies we weren't able to give an explanation. But even with these particularities we would still advise a movie do have as many languages as possible (or at least up to five).
+In the graph above we only kept movies that have up to five languages because our dataset doesn't contain enough movies with more infomation to be relevant in our study. This visualisation shows us that the more languages, or at least up to five languages, you have, the more on average your movie is suppose to make. Since we don't have enough information about movies with more languages we cannot say what the perfect number of languages would be, but we can say that the more the better although you probably don't want to overdo it. The T-test here is much clearer with a T-statistic of ~ -8, as usual the p/value is reallz small and allows us to say that the difference is statistically relevent. 
 
 ### Number of languages vs. ratio of international revenue
 
-We now know that the higher the number of languages the higher the total gross is, can we say the same if we look at the ratio of the revenue made outside of the production countries. Just as before we'll let you pause and try to predict how the following graph might look like.
+We saw that films with more languages have higher revenues on average. What about international revenue?
+
+Do you think movies with more spoken languages have a higher proportion of international revenue ? 
 
 <img src = "plots/Drake_meme.png" class="center">
 
-
-We used the same representation as before. Two graphes showing the average export ratio of the movies one as a line plot one as a box plot. 
+We used the same representation as before. Two graphes showing the average export ratio of the movies gross revenues one as a line plot one as a box plot. 
 
 <div class="responsive-iframe">
     <iframe src="plots/mean_ratio_lang.html"></iframe>
@@ -203,18 +200,11 @@ We used the same representation as before. Two graphes showing the average expor
     <iframe src="plots/ratio_int_box_lang.html"></iframe>
 </div>
 
-This time the ratio of international revenue behaves the same as the total revenue, i.e. the more languages you have the more you can expect your movie to export. As before the use of T-test allows us to be sure that the difference is statistically significant. Moreover, this time the T-statistic is much higher (for 1 language vs. multiple T-stat ~ -14). With the same reasoning as before we can now look at how different genres behave regarding the number of languages. We did various T-tests to see which language benifited in their export by mixing them with others movies. With a T-statistique of around -13 English is the one language from the few we analyzed that gains the most when mixing with others. French and Japanese also gain a bit but the difference is much lower both have a T-statistic of ~ -3. For Spanish and Hindi, which complete the top 5 of most common languages in our dataset, the difference is not statistically significant
-
-<div class="responsive-iframe">
-    <iframe src="plots/mean_rev_lang_genre.html"></iframe>
-</div>
-
-Except for minor exceptions the genres behave as we would except them to. Meaning that, at least up to 5 languages, the more languages the better. The science-fiction is the only genre that doesn't reach its maximum with 5 languages. 
- 
+Films with multiple languages show a higher ratio of international revenue. T-tests confirm this is statistically significant (T-stat ~ -14 for films with one vs. multiple languages). Among languages analyzed, English benefits most from mixing with others (T-stat ~ -13). French and Japanese also show gains, albeit smaller (T-stat ~ -3 each). For Spanish and Hindi, however, the difference isn't statistically significant.
 
 ## Influence of Diversity
 
-When investigating if dicersity impacted the performance in a movie, we looked at 3 different factors : 
+When investigating if diversity impacted the performance in a movie, we looked at 3 different factors : 
 - The gender ratio and representation of the actors
 - The ethnicity of the actors
 - The number of languages spoken in the movies
@@ -234,17 +224,23 @@ We observe that although there is a negative correlation between the ratio of fe
 
 ### Ethnic Diversity
 
-Another factor taken into account is whether the number of represented ethnicities in a movie would have an impact. After retrieving the ethnicities of the actors we had access to in the CMU Dataset, we calculated the entropy of the ethnicity of the actors. For a given number of represented ethnies, the entropy is maximal when each ethnies appear with equal proportion. We then looked at the correlation between this entropy and the international share of the gross.
+Another factor taken into account is whether the number of represented ethnicities in a movie would have an impact. After retrieving the ethnicities of the actors we had access to in the CMU Dataset, we came up with a diversity score metric which we call ethnicicty entropy. 
+
+We calculate this metric by calculating for each ethnicity in a film cast, the proportion p of actors in the cast having that ethnicity, we then sum up the values p*log(1/p) for each ethnicity in the cast, this gives us the entropy of the ethnicities in the cast.
+
+For a given number of represented ethnies, the entropy is maximal when each ethnies appear with equal proportion, also the entropy is higher if there are more ethnicities. Therefore this metrics takes into account the number of ethnicities as well as the equality of distribution of these ethnicities amongst the cast.
+
+We then looked at the correlation between this entropy and the international share of the gross.
+
 <div class="responsive-iframe">
     <iframe src="plots/ethnic_entropy"></iframe>
 </div>
 
-As we can see the entropy of the ethnies is positively correlated with the international share of the gross, meaning that the more diverse the cast is, the more likely the movie is to be successful internationally. However, this is also biased towards larger casts as the entropy is higher for larger casts. 
+As we can see the entropy of the ethnies is positively correlated with the international share of the gross, meaning that the more diverse the cast is, the more likely the movie is to be successful internationally.
 
 ## Conclusion
-Content for the conclusion..
 
-
+In conclusion, the film industry's success on the international stage is influenced by a complex interplay of factors. Co-productions, language diversity, genre appeal, and casting diversity all play crucial roles. As globalization continues to shape viewer preferences and distribution channels, understanding these dynamics becomes crucial for filmmakers aiming to captivate audiences worldwide. Our analysis offers a roadmap for navigating these trends, helping filmmakers and studios make informed decisions that resonate across borders.
 
 
 - [Analysis Part 1](network_region.md)
