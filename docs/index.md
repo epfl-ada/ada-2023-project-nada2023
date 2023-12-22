@@ -37,7 +37,7 @@ full-width-genres: true
 </style>
 # Welcome to Our Analysis of the CMU Movie Dataset
 
-In this ADA project, we studied which factors may influence the international success of a movie, measureed by the proportion of it's box office done outside of its production countries.
+Over half of the global film revenues are realized internationally, beyond the confines of the movies originating nations. In a world where movies not only entertain but also influence and connect cultures, understanding the factors that drive international success is more crucial than ever. What makes a movie resonate beyond its home turf? Let's explore.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -68,13 +68,16 @@ We can clearly observe a trend since the start of the 21st century of the ratio 
 - Due to gloablisation, over the past few decades the investments in publicity abroad has drastically increased, and due to new technologies it is much easier to reach a wider audience
 - Thanks to internet, it is much easier to gather data on international box office now than before, so we might have more accurate distribution of the box office per country
 
+
+Our following network graph illuminates the flow of movie exports across continents, with a spotlight on the USA and Europe as key players. These regions dominate both in producing and exporting films, particularly to each other, underscoring their significant roles in the global film industry. This visualization captures the essence of their cinematic exchange and the wider reach of their movies worldwide, reflecting the universal appeal and cross-cultural impact of cinema.
+
 ![region_to_region](network_region_files/network_region_62_0.png)
 
 ## Influence of the genre
 
  The first factor we studied was the influence of the genre on the international success of movies. We looked at the proportion of the box office done outside of the production countries, and the total box office, for each genre. We also looked at the evolution of the proportion of the box office done outside of the production countries for each genre across time.
  
- First, in order to get an idea of how many genres each movie has, here is a histogram of the number of movies per number of genres :
+First, in order to get an idea of how many genres there are per movie, here is a histogram representing the distribution of the number of genres across movies:
 
  
 
@@ -96,6 +99,8 @@ Now let us look at which genres export the most, as well as the recent evolution
 
 As we see from above, science-fiction and thriller genres emerge as the most exported movie categories. This popularity can be attributed to their wide appeal, cutting-edge special effects, and often universal themes that resonate across different cultures. On the other hand, the World cinema and Documentary genres appear to be the least exported. This could be due to their niche appeal and the fact that documentaries and World cinema movies often delve into culturally specific subjects, which might not translate as effectively to international audiences. 
 
+Now, let's explore the genres that dominate exports from each continent and identify which genres are most popular among viewers in these regions.
+
 <div class="responsive-iframe">
     <iframe src="plots/pie_chart_exported.html"></iframe>
 </div>
@@ -104,40 +109,32 @@ As we see from above, science-fiction and thriller genres emerge as the most exp
     <iframe src="plots/pie_chart_watched.html"></iframe>
 </div>
 
+As we delve into these charts, we can see some interesting patterns emerge. For instance, Asia stands out with its exceptionally diverse genre distribution in movie exports. This variety likely arises from the region's wide range of film styles, including the vivid storytelling of Bollywood, the creative flair of Japanese anime, and the engaging narratives of Chinese cinema, all contributing to Asia's unique presence in the international film market.
 
-## Influence of the Production Countries
+## Influence of Co-Productions
 
-Another factor that we thought would be important for the export of movies is the coutries in which the movies were shot. 
-We first tried to understand if a production region had an influence on how a movie was exporting. To do so, we performed a paired matching. In our case, the treatment is producing the movie in Europe. We used logistic regression to compute the propensity score based on the movie release date, the number of languages and the number of production countries. Unfortunately, we did not find any statistically significant difference between the two groups. And since the control group, is mostly composed of north american movies, the results would have been similar by taking North America as region of production as the treatment. 
+In this part we will analyse how the co-production of a movie across different countries influences it's success. First, let's take a look at all coproductions world-wide. 
 
 <div class="responsive-iframe">
-    <iframe src="plots/pair_matching_region.html"></iframe>
+    <iframe src="plots/country_co-productions.html"></iframe>
 </div>
 
-Therefore, we will focus on the influence of co-prodoctions of movies. Firstly, we do a brief analysis on the total gross of the movies to then fine-tune it to the ratio made in foreign coutries. 
+This interactive map shows us that alot of countries are involved in coproductions. We clearly see that the USA, the UK, France and Germany are involved in most of them. By zooming in we can also see how european countries are involved in alot of coproductions. 
+
+Let's now take a look at the evolution of the proportion of coproduced films across time. 
 
 <div class="responsive-iframe">
     <iframe src="plots/movies_coprod_ratio.html"></iframe>
 </div>
 
 
-As we see, as time advances movie production companies from different countries seem to work more and more together, but the ratio of films made in co-production barely goes up. From this graph we saw that there was a little increase in the ratio of movies that were made by mutlitple countries in the last 20 years. This small increase leads us to think that having a co-production would slightly boost the revenue of a movie. The question now is how many coutries should you have to maximize your revenue? And how many co-producing countries should you have if you want to maximize the ratio of the revenue made outside the production countries?   
+The prevalence of co-produced movies is rising, yet compared to the overall surge in film production, their proportion remains consistent. Analysis of recent trends reveals a marginal uptick in multi-country collaborations over the past two decades, hinting that co-productions may modestly enhance a movie's revenue. This raises key questions: What is the optimal number of countries for maximizing revenue, and how many should collaborate to maximize revenue generated outside the production countries?
 
 <div class="responsive-iframe">
     <iframe src="plots/mean_revenue_coprod_number.html"></iframe>
 </div>
 
-So on average movies made in two countries are the one yielding the most revenues. The use of T-test allowed us to see that the difference in mean was statistically significant, which allows us to conclude that the collaboration of two countries should lead on average to a higher grossing film than any other number of co-production coutries. Even if the test allows us to say that the difference is statistically different the T-statistic is rather small (~2), this tells us that even if the difference exists it doesn't have a huge impact. The section above told us that the genre of a movie has an influence so let us see if all genres perform the same.
-
-<div class="responsive-iframe">
-    <iframe src="plots/tot_coprod_genre.html"></iframe>
-</div>
-
-For most genres we will have the same conclusion as for all movies, i.e. two co-production countries is the best. The notable exceptions are World Cinema, Romance Film and Comedy. We don't have an explanation for why that is but the fact that Romance Film and Comedy behave in the same way isn't surprising as 60% of movies that are romantic are also comedies and 40% of comedies are romantic films as well. For the World Cinema genre, we give an explanation about why it might behave like that after we analyse the number or production region for a movie. 
-
-<div class="responsive-iframe">
-    <iframe src="plots/country_co-productions.html"></iframe>
-</div>
+So on average movies made in two countries are the ones yielding the most revenues. The use of T-test allowed us to see that the difference in mean was statistically significant, which allows us to conclude that the collaboration of two countries should lead on average to a higher grossing film than any other number of co-production coutries. Even if the test allows us to say that the difference is statistically different the T-statistic is rather small (~2), this tells us that although a difference exists it has a moderated impact.
 
 
 ### Coproduction countries vs. ratio of international revenue
