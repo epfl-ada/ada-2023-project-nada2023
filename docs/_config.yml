@@ -1,3 +1,1 @@
-theme: jekyll-theme-cayman
-title: ADA Template Website
-description: A template website for ADA
+remote_theme: daattali/beautiful-jekyll
