@@ -79,6 +79,14 @@ Now let us look at which genres export the most, as well as the recent evolution
 
 As we see from above, the most exported genre is animation while the least (amongst the the 50 most represented) is Bollywood. This would make sense since Bollywood movies rarely have a global appeal, and are mostly watched in India, while animation movies are more easily translated and thus watched internationally.
 
+<div class="responsive-iframe">
+    <iframe src="plots/pie_chart_exported.html"></iframe>
+</div>
+
+<div class="responsive-iframe">
+    <iframe src="plots/pie_chart_watched.html"></iframe>
+</div>
+
 
 ## Influence of the Production Countries
 
