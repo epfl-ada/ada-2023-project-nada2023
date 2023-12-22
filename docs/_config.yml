@@ -1,2 +1,7 @@
 remote_theme: daattali/beautiful-jekyll
 title: International success of movies
+
+navbar-links:
+  Home: "success"
+  About Us: "aboutme"
+  Sources: "sources"
