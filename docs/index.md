@@ -94,7 +94,7 @@ Now let us look at which genres export the most, as well as the recent evolution
     <iframe src="plots/genre_evolution.html"></iframe>
 </div>
 
-As we see from above, the most exported genre is animation while the least (amongst the the 50 most represented) is Bollywood. This would make sense since Bollywood movies rarely have a global appeal, and are mostly watched in India, while animation movies are more easily translated and thus watched internationally.
+As we see from above, science-fiction and thriller genres emerge as the most exported movie categories. This popularity can be attributed to their wide appeal, cutting-edge special effects, and often universal themes that resonate across different cultures. On the other hand, the teen and documentary genres appear to be the least exported. This could be due to their niche appeal and the fact that documentaries and teen dramas often delve into culturally specific subjects, which might not translate as effectively to international audiences. 
 
 <div class="responsive-iframe">
     <iframe src="plots/pie_chart_exported.html"></iframe>
@@ -107,7 +107,14 @@ As we see from above, the most exported genre is animation while the least (amon
 
 ## Influence of the Production Countries
 
-Another factor that we thought would be important for the export of movies is the coutries in which the movies were shot. In this part of our analysis we will focus on the influence of co-prodoctions of movies. Firstly, we do a brief analysis on the total gross of the movies to then fine-tune it to the ratio made in foreign coutries. 
+Another factor that we thought would be important for the export of movies is the coutries in which the movies were shot. 
+We first tried to understand if a production region had an influence on how a movie was exporting. To do so, we performed a paired matching. In our case, the treatment is producing the movie in Europe. We used logistic regression to compute the propensity score based on the movie release date, the number of languages and the number of production countries. Unfortunately, we did not find any statistically significant difference between the two groups. And since the control group, is mostly composed of north american movies, the results would have been similar by taking North America as region of production as the treatment. 
+
+<div class="responsive-iframe">
+    <iframe src="plots/pair_matching_region.html"></iframe>
+</div>
+
+Therefore, we will focus on the influence of co-prodoctions of movies. Firstly, we do a brief analysis on the total gross of the movies to then fine-tune it to the ratio made in foreign coutries. 
 
 <div class="responsive-iframe">
     <iframe src="plots/movies_coprod_ratio.html"></iframe>
@@ -230,18 +237,12 @@ We observe that although there is a negative correlation between the ratio of fe
 
 ### Ethnic Diversity
 
-Another factor taken into account is whether the number of represented ethnicities in a movie would have an impact. After retrieving the ethnicities of the actors we had access to in the CMU Dataset, we created an "ethnicity ratio" defined as the ratio between the number of ethnicities in the movie to the number of actors.
-
-
+Another factor taken into account is whether the number of represented ethnicities in a movie would have an impact. After retrieving the ethnicities of the actors we had access to in the CMU Dataset, we calculated the entropy of the ethnicity of the actors. For a given number of represented ethnies, the entropy is maximal when each ethnies appear with equal proportion. We then looked at the correlation between this entropy and the international share of the gross.
 <div class="responsive-iframe">
-    <iframe src="plots/ratio_of_export_per_ethnicity_ratio.html"></iframe>
-</div>
-<div class="responsive-iframe">
-    <iframe src="plots/ratio_of_export_per_nethnicity.html"></iframe>
+    <iframe src="plots/ethnic_entropy"></iframe>
 </div>
 
-As we can see the ethnicity score does not seem to have an impact whereas the number of ethnicities seems correlated with the export ratio. However, this might be due to its correlation with the number of actors.
-
+As we can see the entropy of the ethnies is positively correlated with the international share of the gross, meaning that the more diverse the cast is, the more likely the movie is to be successful internationally. However, this is also biased towards larger casts as the entropy is higher for larger casts. 
 
 ## Conclusion
 Content for the conclusion..
