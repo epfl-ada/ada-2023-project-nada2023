@@ -182,7 +182,7 @@ This graph is really similar to the one about the ratio of movies made by more t
 
 In the graph above we only kept movies that have up to five languages because our dataset doesn't contain enough movies with more infomation to be relevant in our study. This visualisation shows us that the more languages, or at least up to five languages, you have, the more on average your movie is suppose to make. Since we don't have enough information about movies with more languages we cannot say what the perfect number of languages would be, but we can say that the more the better although you probably don't want to overdo it. The T-test here is much clearer with a T-statistic of ~ -8, as usual the p/value is reallz small and allows us to say that the difference is statistically relevent. 
 
-### Number of languages vs. ratio of international revenue
+### Number of Languages vs. Ratio of International Revenue
 
 We saw that films with more languages have higher revenues on average. What about international revenue?
 
