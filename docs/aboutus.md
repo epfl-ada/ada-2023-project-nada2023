@@ -4,8 +4,8 @@ Welcome to our ADA Project Website! We are a Team of 5 EPFL Data Science Student
 
 ## Team Members
 
-* [Antoine Merel](https://github.com/GorgetteFR)
-* [Elliot Jacquet-Francillon](https://github.com/oElliotJacquetF)
+* [Antoine Merel](https://github.com/GeorgetteFR)
+* [Elliot Jacquet-Francillon](https://github.com/ElliotJacquetF)
 * [Gilles De Waha](https://github.com/gillesdewaha)
 * [Marc Pitteloud](https://github.com/BrokenSki8)
 * [Amaury George](https://github.com/AmauryGeorge)
