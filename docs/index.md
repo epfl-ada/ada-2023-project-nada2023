@@ -243,7 +243,7 @@ As we can see the entropy of the ethnies is positively correlated with the inter
 In conclusion, the film industry's success on the international stage is influenced by a complex interplay of factors. Co-productions, language diversity, genre appeal, and casting diversity all play crucial roles. As globalization continues to shape viewer preferences and distribution channels, understanding these dynamics becomes crucial for filmmakers aiming to captivate audiences worldwide. Our analysis offers a roadmap for navigating these trends, helping filmmakers and studios make informed decisions that resonate across borders.
 
 
-- [Analysis Part 1](network_region.md)
-- [Analysis Part 2](notebook.md)
+
+
 
 Explore our findings and discover interesting trends and patterns in movie data!
