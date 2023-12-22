@@ -83,7 +83,9 @@ Most movies have multiple genres, e.g. Titanic (1997) has all of the following g
 
 Now let us look at which genres export the most, as well as the recent evolution of the most exported genres :
 
-![revenue per genre](plots/most_international_genres.png)
+<div class="responsive-iframe">
+    <iframe src="plots/most_international_genres.html"></iframe>
+</div>
 
 <div class="responsive-iframe">
     <iframe src="plots/genre_evolution.html"></iframe>
