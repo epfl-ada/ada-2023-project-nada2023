@@ -205,7 +205,7 @@ This time the ratio of international revenue is behaves the same as the total re
     <iframe src="plots/mean_rev_lang_genre.html"></iframe>
 </div>
 
-Expect for minor exception the genre behave as we would except them to. Meaning that, at least up to 5 languages, The more languages the better. The excpetion are here so minor that I dont think it's relevant to explain them. 
+Expect for minor exception the genre behave as we would except them to. Meaning that, at least up to 5 languages, The more languages the better. The science fiction is the only genre that doesn't reach is maximum with 5 languages. 
  
 
 ## Influence of Diversity
