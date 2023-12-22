@@ -2,9 +2,9 @@
 layout: page
 title: Movie exportation success
 subtitle: Let's see the factors
-cover-img: header.png
-thumbnail-img: header.png
-share-img: header.png
+cover-img: ban_gpt.png
+thumbnail-img: ban_gpt.png
+share-img: ban_gpt.png
 use-site-title: false
 full-width-genres: true
 
