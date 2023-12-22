@@ -137,7 +137,7 @@ The prevalence of co-produced movies is rising, yet compared to the overall surg
 So on average movies made in two countries are the ones yielding the most revenues. The use of T-test allowed us to see that the difference in mean was statistically significant, which allows us to conclude that the collaboration of two countries should lead on average to a higher grossing film than any other number of co-production coutries. Even if the test allows us to say that the difference is statistically different the T-statistic is rather small (~2), this tells us that although a difference exists it has a moderated impact.
 
 
-### Coproduction countries vs. ratio of international revenue
+### Coproduction Countries vs. Ratio of International Revenue
 
 We now know that the best number of countries for total gross is usually 2, 
 
