@@ -76,7 +76,11 @@ We can clearly observe a trend since the the start of the 21st century of the ra
  
  First, in order to get and idea of how many genres each movie has, here is a histogram of the number of movies per number of genres :
 
- ![number of genres](notebook_files/notebook_13_0.png)
+ 
+
+ <div class="responsive-iframe">
+    <iframe src="plots/nb_genres.html"></iframe>
+</div>
 
 Most movies have multiple genres, e.g. Titanic (1997) has all of the following genres: Tragedy, Costume drama, Historical fiction, Action/Adventure, Period piece, Drama, Disaster, Romantic drama and Romance Film. This explain why the most represented number of genres is 5.
 
@@ -152,6 +156,10 @@ Here we can see that the more coproduction countries we have the more the ratio 
 
 In this case almost all genre seem to follow the expected trend with small variation. The only notable exception to the rule is the _Thriller_ genre that has a ratio of international revenue that goes down when we reach 4 coproduction countries. 
 
+### Influence of the number of regions 
+
+We made a small analysis about the number of region that produced a movie and its relation to the ratio of international revenue. We found very similar results as for the number of co-production countries. We can explain that by the fact that 75% of the co-produced movies have countries from multiple regions. We can make the simplified hypothesis that adding a country is like adding a region so we won't repeat ourselves.    
+
 ## Influence of the number of languages
 
 Since we analysed the influence of the number of co-production countries had in the revenue and the export of the movies. We wandered if having multiple languages could also help export movies. Since the two ideas are pretty simlar, we will follow the same template as for the number of coproduction countries. 
@@ -197,7 +205,7 @@ This time the ratio of international revenue is behaves the same as the total re
     <iframe src="plots/mean_rev_lang_genre.html"></iframe>
 </div>
 
-Expect for minor exception the genre behave as we would except them to. Meaning that, at least up to 5 languages, The more languages the better. The excpetion are here so minor that I dont think it's relevant to explain them. 
+Expect for minor exception the genre behave as we would except them to. Meaning that, at least up to 5 languages, The more languages the better. The science fiction is the only genre that doesn't reach is maximum with 5 languages. 
  
 
 ## Influence of Diversity
