@@ -230,18 +230,12 @@ We observe that although there is a negative correlation between the ratio of fe
 
 ### Ethnic Diversity
 
-Another factor taken into account is whether the number of represented ethnicities in a movie would have an impact. After retrieving the ethnicities of the actors we had access to in the CMU Dataset, we created an "ethnicity ratio" defined as the ratio between the number of ethnicities in the movie to the number of actors.
-
-
+Another factor taken into account is whether the number of represented ethnicities in a movie would have an impact. After retrieving the ethnicities of the actors we had access to in the CMU Dataset, we calculated the entropy of the ethnicity of the actors. For a given number of represented ethnies, the entropy is maximal when each ethnies appear with equal proportion. We then looked at the correlation between this entropy and the international share of the gross.
 <div class="responsive-iframe">
-    <iframe src="plots/ratio_of_export_per_ethnicity_ratio.html"></iframe>
-</div>
-<div class="responsive-iframe">
-    <iframe src="plots/ratio_of_export_per_nethnicity.html"></iframe>
+    <iframe src="plots/ethnic_entropy"></iframe>
 </div>
 
-As we can see the ethnicity score does not seem to have an impact whereas the number of ethnicities seems correlated with the export ratio. However, this might be due to its correlation with the number of actors.
-
+As we can see the entropy of the ethnies is positively correlated with the international share of the gross, meaning that the more diverse the cast is, the more likely the movie is to be successful internationally. However, this is also biased towards larger casts as the entropy is higher for larger casts. 
 
 ## Conclusion
 Content for the conclusion..
