@@ -23,6 +23,8 @@
   width: 50%;
 }
 
+<img src="/docs/header.png" alt="Header Image" style="width:100%;">
+
 </style>
 # Welcome to Our Analysis of the CMU Movie Dataset
 
