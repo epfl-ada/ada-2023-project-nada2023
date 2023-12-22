@@ -94,7 +94,7 @@ Now let us look at which genres export the most, as well as the recent evolution
     <iframe src="plots/genre_evolution.html"></iframe>
 </div>
 
-As we see from above, the most exported genre is animation while the least (amongst the the 50 most represented) is Bollywood. This would make sense since Bollywood movies rarely have a global appeal, and are mostly watched in India, while animation movies are more easily translated and thus watched internationally.
+As we see from above, science-fiction and thriller genres emerge as the most exported movie categories. This popularity can be attributed to their wide appeal, cutting-edge special effects, and often universal themes that resonate across different cultures. On the other hand, the teen and documentary genres appear to be the least exported. This could be due to their niche appeal and the fact that documentaries and teen dramas often delve into culturally specific subjects, which might not translate as effectively to international audiences. 
 
 <div class="responsive-iframe">
     <iframe src="plots/pie_chart_exported.html"></iframe>
