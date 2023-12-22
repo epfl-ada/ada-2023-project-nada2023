@@ -49,7 +49,7 @@ In this ADA project, we studied which factors may influence the international su
 
 ## Introduction
 
-Welcome to our detailed exploration of the fascinating world of movies. In this project, we dive deep into the CMU Movie Dataset, combined with IMdBs box office data ([**BoxOfficeMojo.com**](https://www.boxofficemojo.com/)) unraveling the intricate factors that contribute to the international success of films. Our journey through this dataset is not just about numbers and charts; it's a story about how movies transcend borders and cultural barriers to captivate audiences worldwide.
+Welcome to our detailed exploration of the fascinating world of movies. In this project, we dive deep into the CMU Movie Dataset, combined with IMdB's box office data ([**BoxOfficeMojo.com**](https://www.boxofficemojo.com/)) unraveling the intricate factors that contribute to the international success of films. Our journey through this dataset is not just about numbers and charts; it's a story about how movies transcend borders and cultural barriers to captivate audiences worldwide.
 
 We examine various elements such as genre preferences, box office trends, and the impact of production countries on a movie's global appeal. By combining statistical analysis with insightful visualizations, we aim to provide a comprehensive understanding of what makes a movie resonate internationally.
 
@@ -64,7 +64,7 @@ Join us as we uncover the hidden narratives behind the data and reveal the evolv
     <iframe src="plots/foreign_evolution.html"></iframe>
 </div>
 
-We can clearly observe a trend since the the start of the 21st century of the ratio of the box office done internationally. Multiple factors could explain this observation : 
+We can clearly observe a trend since the start of the 21st century of the ratio of the box office done internationally. Multiple factors could explain this observation : 
 - Due to gloablisation, over the past few decades the investments in publicity abroad has drastically increased, and due to new technologies it is much easier to reach a wider audience
 - Thanks to internet, it is much easier to gather data on international box office now than before, so we might have more accurate distribution of the box office per country
 
@@ -74,7 +74,7 @@ We can clearly observe a trend since the the start of the 21st century of the ra
 
  The first factor we studied was the influence of the genre on the international success of movies. We looked at the proportion of the box office done outside of the production countries, and the total box office, for each genre. We also looked at the evolution of the proportion of the box office done outside of the production countries for each genre across time.
  
- First, in order to get and idea of how many genres each movie has, here is a histogram of the number of movies per number of genres :
+ First, in order to get an idea of how many genres each movie has, here is a histogram of the number of movies per number of genres :
 
  
 
@@ -82,7 +82,7 @@ We can clearly observe a trend since the the start of the 21st century of the ra
     <iframe src="plots/nb_genres.html"></iframe>
 </div>
 
-Most movies have multiple genres, e.g. Titanic (1997) has all of the following genres: Tragedy, Costume drama, Historical fiction, Action/Adventure, Period piece, Drama, Disaster, Romantic drama and Romance Film. This explain why the most represented number of genres is 5.
+Most movies have multiple genres, and the most common number of genres is 3. We can also see that there are a lot of movies with only one genre, and a few movies with 7 or more genres.
 
 Now let us look at which genres export the most, as well as the recent evolution of the most exported genres :
 
@@ -94,7 +94,7 @@ Now let us look at which genres export the most, as well as the recent evolution
     <iframe src="plots/genre_evolution.html"></iframe>
 </div>
 
-As we see from above, science-fiction and thriller genres emerge as the most exported movie categories. This popularity can be attributed to their wide appeal, cutting-edge special effects, and often universal themes that resonate across different cultures. On the other hand, the teen and documentary genres appear to be the least exported. This could be due to their niche appeal and the fact that documentaries and teen dramas often delve into culturally specific subjects, which might not translate as effectively to international audiences. 
+As we see from above, science-fiction and thriller genres emerge as the most exported movie categories. This popularity can be attributed to their wide appeal, cutting-edge special effects, and often universal themes that resonate across different cultures. On the other hand, the World cinema and Documentary genres appear to be the least exported. This could be due to their niche appeal and the fact that documentaries and World cinema movies often delve into culturally specific subjects, which might not translate as effectively to international audiences. 
 
 <div class="responsive-iframe">
     <iframe src="plots/pie_chart_exported.html"></iframe>
@@ -133,7 +133,7 @@ So on average movies made in two countries are the one yielding the most revenue
     <iframe src="plots/tot_coprod_genre.html"></iframe>
 </div>
 
-For most genre we will have the same conclusion as for all movies, i.e. two coproduction countries is best. The notable exception are World Cinema, Romance Film and Comedy. We don't have an explanation for what that is but the fact that Romance Film and Comedy behave in the same way isn't surprising as 60% of movies that are romantic are also comedies and 40% of comedies are romantic films as well. For the World Cinema genre, we give an explanation about why it might behave like that after we analyse the number or production region for a movie. 
+For most genres we will have the same conclusion as for all movies, i.e. two co-production countries is the best. The notable exceptions are World Cinema, Romance Film and Comedy. We don't have an explanation for why that is but the fact that Romance Film and Comedy behave in the same way isn't surprising as 60% of movies that are romantic are also comedies and 40% of comedies are romantic films as well. For the World Cinema genre, we give an explanation about why it might behave like that after we analyse the number or production region for a movie. 
 
 <div class="responsive-iframe">
     <iframe src="plots/country_co-productions.html"></iframe>
@@ -142,11 +142,11 @@ For most genre we will have the same conclusion as for all movies, i.e. two copr
 
 ### Coproduction countries vs. ratio of international revenue
 
-We now know that the best number of countries for total gross is usually 2, is this the same if we look at the ratio of the revenue made outside of the production countries. I'll let you pause for a minute and think how you think increasing the number of coproduction countries might affect the international ratio.
+We now know that the best number of countries for total gross is usually 2, is this the same if we look at the ratio of the revenue made outside of the production countries? I'll let you pause for a minute and think about how increasing the number of co-production countries might affect the international ratio.
 
 ![mmmh!](plots/thinking_meme.jpg)
 
-The following graph illustrate are two representation of the same idea. The first on is a line plot of the Mean ratio of the revenue made by movies made in a given number of coutries. The second one is the same values but plotted as a box plot to give more idea about the distribution of the values. 
+The following graphs are two representation of the same idea. The first on is a line plot of the Mean ratio of the revenue made by movies made in a given number of coutries. The second one is the same values but plotted as a box plot to give a more accurate idea about the distribution of the values. 
 
 <div class="responsive-iframe">
     <iframe src="plots/mean_ratio_coprod.html"></iframe>
@@ -155,13 +155,13 @@ The following graph illustrate are two representation of the same idea. The firs
     <iframe src="plots/ratio_int_box_coprod.html"></iframe>
 </div>
 
-Here we can see that the more coproduction countries we have the more the ratio of the revenue is made in foreign coutries, this result might be a little counter intuitive. If we had defined a _main production country_ and we would have looked at the ratio of the revenue made outside of this country it would have seemed obvious that it would be higher, because part of the revenue would have bean made in _secondary production country_. Here we look at the ratio of the box office made outside of all the production countrie and we still have a positive correlation. As before the use of T-test allows us to be sure that the difference is statistically. Moreover, this time the T-statistic is much higher (for 1 country vs. multiple T-stat ~ -19). With the same reasoning as before we can now look at different genre behave regarding the number of coprod countries. We did various T-test to see which country augmented their export by coproducing movies. With a T-statistique of around -13 the USA is the one country from the few we analyzed that gains the most when coproducing with other countries. France and India also gain a bit but the difference is much lower both have a T-statistic of ~3. 
+Here we can see that the more co-production countries we have, the more the ratio of the revenue is made in foreign coutries. This result might be a little counter-intuitive. If we had defined a _main production country_ and we had looked at the ratio of the revenue made outside of this country it would have seemed obvious that it would be higher, because part of the revenue would have bean made in  the _secondary production country_. Here we look at the ratio of the box office made outside of all the production countries and we still have a positive correlation. As before the use of T-test allows us to be sure that the difference is statistically. Moreover, this time the T-statistic is much higher (for 1 country vs. multiple T-stat ~ -19). With the same reasoning as before we can now look at how different genres behave regarding the number of co-producing countries. We did various T-test to see which countries augmented their export by co-producing movies. With a T-statistique of around -13 the USA is the one country from the few we analyzed that gains the most when co-producing with other countries. France and India also gain a bit but the difference is much lower both have a T-statistic of ~3. 
 
 <div class="responsive-iframe">
     <iframe src="plots/ratio_int_coprod_genre.html"></iframe>
 </div>
 
-In this case almost all genre seem to follow the expected trend with small variation. The only notable exception to the rule is the _Thriller_ genre that has a ratio of international revenue that goes down when we reach 4 coproduction countries. 
+In this case almost all genre seem to follow the expected trend with small variations. The only notable exception to the rule is the _Thriller_ genre that has a ratio of international revenue that goes down when we reach 4 co-production countries. 
 
 ### Influence of the number of regions 
 
@@ -169,25 +169,25 @@ We made a small analysis about the number of region that produced a movie and it
 
 ## Influence of the number of languages
 
-Since we analysed the influence of the number of co-production countries had in the revenue and the export of the movies. We wandered if having multiple languages could also help export movies. Since the two ideas are pretty simlar, we will follow the same template as for the number of coproduction countries. 
+Since we analysed the influence of the number of co-production countries had in the revenue and the export of the movies. We wondered if having multiple languages could also help export movies. Since the two ideas are pretty simlar, we will follow the same template as for the number of coproduction countries. 
 
 <div class="responsive-iframe">
     <iframe src="plots/movies_lang_ratio.html"></iframe>
 </div>
 
-This graph is really similar to the one about the ratio of movies made by more than one country. Our anaylsis stays the same if we see an augmentation it is probably due to multiple factors one of them being that it should help boost the revenue of the movies. As before we ask ourself how many language should a movie have to have the best expected revenue? And is this the same number if we want our movie to export as much as possible?
+This graph is really similar to the one about the ratio of movies made by more than one country. Our anaylsis stays the same if we see an augmentation it is probably due to multiple factors, one of them being that it should help boost the revenue of the movies. As before we ask ourself how many language should a movie have to have the best expected revenue? And is this the same number if we want our movie to export as much as possible?
 
 <div class="responsive-iframe">
     <iframe src="plots/gross_languages.html"></iframe>
 </div>
 
-In the graph above we only kept movies that have up to five languages because our dataset doesn't contain enough movies with more infomation to be relevant in our study. This visualisation shows us that the more languages, or at least up to five languages, you have the more, on average, your movie is suppose to make. Since we don't have enough information about movies with more languages we cannot say the perfect number of languages would be but we can say that the more the better but you probably don't want to over do it. The T-test here is much more clear with a T-statistic of ~ -8, as usual the p/value is reallz small and allows us to say that the difference is statistically relevent. As for the co-production countries let us do the same analysis but seperate the result per genre. 
+In the graph above we only kept movies that have up to five languages because our dataset doesn't contain enough movies with more infomation to be relevant in our study. This visualisation shows us that the more languages, or at least up to five languages, you have, the more on average your movie is suppose to make. Since we don't have enough information about movies with more languages we cannot say what the perfect number of languages would be, but we can say that the more the better although you probably don't want to overdo it. The T-test here is much clearer with a T-statistic of ~ -8, as usual the p/value is reallz small and allows us to say that the difference is statistically relevent. As for the co-production countries let us do the same analysis but seperate the result per genre. 
 
 <div class="responsive-iframe">
     <iframe src="plots/mean_rev_lang_genre.html"></iframe>
 </div>
 
-We can see that most genres follow the expected trend with the notable exceptions being Adventure, Thriller and Crime Fiction. The Adventure movies mysteriously don't perform as well when they have 3 and five languages but other follow the expected trend. Thriller and Crime Fiction take a hit at 4 laguages then are going back up at five. For all three of these anomalies we weren't able to give an explanation. But even with this particularities we would still advice a movie do have a many languages as possible (or at least up to five).
+We can see that most genres follow the expected trend with the notable exceptions being Adventure, Thriller and Crime Fiction. The Adventure movies mysteriously don't perform as well when they have 3 and five languages but others follow the expected trend. Thriller and Crime Fiction take a hit at 4 languages and then go back up at five. For all three of these anomalies we weren't able to give an explanation. But even with these particularities we would still advise a movie do have as many languages as possible (or at least up to five).
 
 ### Number of languages vs. ratio of international revenue
 
@@ -206,13 +206,13 @@ We used the same representation as before. Two graphes showing the average expor
     <iframe src="plots/ratio_int_box_lang.html"></iframe>
 </div>
 
-This time the ratio of international revenue is behaves the same as the total revenue, i.e. the more languages you have the more you can expect your movie to export. As before the use of T-test allows us to be sure that the difference is statistically. Moreover, this time the T-statistic is much higher (for 1 language vs. multiple T-stat ~ -14). With the same reasoning as before we can now look at different genre behave regarding the number of langugags. We did various T-test to see which language benifited in their export by mixing them with others movies. With a T-statistique of around -13 English is the one language from the few we analyzed that gains the most when mixing with others. French and Japanes also gain a bit but the difference is much lower both have a T-statistic of ~ -3. For Spanish and Hindi, which complete the top 5 of most common languages in our dataset, the difference is not statistically significant
+This time the ratio of international revenue behaves the same as the total revenue, i.e. the more languages you have the more you can expect your movie to export. As before the use of T-test allows us to be sure that the difference is statistically significant. Moreover, this time the T-statistic is much higher (for 1 language vs. multiple T-stat ~ -14). With the same reasoning as before we can now look at how different genres behave regarding the number of languages. We did various T-tests to see which language benifited in their export by mixing them with others movies. With a T-statistique of around -13 English is the one language from the few we analyzed that gains the most when mixing with others. French and Japanese also gain a bit but the difference is much lower both have a T-statistic of ~ -3. For Spanish and Hindi, which complete the top 5 of most common languages in our dataset, the difference is not statistically significant
 
 <div class="responsive-iframe">
     <iframe src="plots/mean_rev_lang_genre.html"></iframe>
 </div>
 
-Expect for minor exception the genre behave as we would except them to. Meaning that, at least up to 5 languages, The more languages the better. The science fiction is the only genre that doesn't reach is maximum with 5 languages. 
+Except for minor exceptions the genres behave as we would except them to. Meaning that, at least up to 5 languages, the more languages the better. The science-fiction is the only genre that doesn't reach its maximum with 5 languages. 
  
 
 ## Influence of Diversity
