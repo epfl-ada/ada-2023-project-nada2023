@@ -1,3 +1,15 @@
+---
+layout: page
+title: Movie exportation success
+subtitle: Let's see the factors
+cover-img: /docs/header.png
+thumbnail-img: /docs/header.png
+share-img: /docs/header.png
+use-site-title: false
+full-width-genres: true
+
+---
+
 <meta http-equiv='cache-control' content='no-cache'> 
 <meta http-equiv='expires' content='0'> 
 <meta http-equiv='pragma' content='no-cache'>
