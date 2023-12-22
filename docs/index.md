@@ -107,7 +107,14 @@ As we see from above, the most exported genre is animation while the least (amon
 
 ## Influence of the Production Countries
 
-Another factor that we thought would be important for the export of movies is the coutries in which the movies were shot. In this part of our analysis we will focus on the influence of co-prodoctions of movies. Firstly, we do a brief analysis on the total gross of the movies to then fine-tune it to the ratio made in foreign coutries. 
+Another factor that we thought would be important for the export of movies is the coutries in which the movies were shot. 
+We first tried to understand if a production region had an influence on how a movie was exporting. To do so, we performed a paired matching. In our case, the treatment is producing the movie in Europe. We used logistic regression to compute the propensity score based on the movie release date, the number of languages and the number of production countries. Unfortunately, we did not find any statistically significant difference between the two groups. And since the control group, is mostly composed of north american movies, the results would have been similar by taking North America as region of production as the treatment. 
+
+<div class="responsive-iframe">
+    <iframe src="plots/pair_matching_region.html"></iframe>
+</div>
+
+Therefore, we will focus on the influence of co-prodoctions of movies. Firstly, we do a brief analysis on the total gross of the movies to then fine-tune it to the ratio made in foreign coutries. 
 
 <div class="responsive-iframe">
     <iframe src="plots/movies_coprod_ratio.html"></iframe>
