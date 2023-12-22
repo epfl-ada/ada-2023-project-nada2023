@@ -121,7 +121,7 @@ So on average movies made in two countries are the one yielding the most revenue
     <iframe src="plots/tot_coprod_genre.html"></iframe>
 </div>
 
-We can see that most genres follow the expected trend with the notable exceptions being Action/Adventure, Romance Film and Romatic Comedy. They all reach their peak with three co-production coutries. This leads to the conclusion that most genre should be made in two countries to maximise their share of revenue abroad while movies from the three aforementionned genres should have 3 home countries. 
+For most genre we will have the same conclusion as for all movies, i.e. two coproduction countries is best. The notable exception are World Cinema, Romance Film and Comedy. We don't have an explanation for what that is but the fact that Romance Film and Comedy behave in the same way isn't surprising as 60% of movies that are romantic are also comedies and 40% of comedies are romantic films as well. For the World Cinema genre, we give an explanation about why it might behave like that after we analyse the number or production region for a movie. 
 
 <div class="responsive-iframe">
     <iframe src="plots/country_co-productions.html"></iframe>
