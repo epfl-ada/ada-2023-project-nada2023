@@ -2,9 +2,9 @@
 layout: page
 title: Movie exportation success
 subtitle: Let's see the factors
-cover-img: /docs/header.png
-thumbnail-img: /docs/header.png
-share-img: /docs/header.png
+cover-img: header.png
+thumbnail-img: header.png
+share-img: header.png
 use-site-title: false
 full-width-genres: true
 
@@ -34,8 +34,6 @@ full-width-genres: true
   margin-right: auto;
   width: 50%;
 }
-
-<img src="header.png" alt="Header Image" style="width:100%;">
 
 </style>
 # Welcome to Our Analysis of the CMU Movie Dataset
